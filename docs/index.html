@@ -63,9 +63,12 @@
     display:flex;align-items:center;justify-content:center;flex-direction:column;
     transition:opacity .55s ease,visibility .55s ease}
   #pgLoader.hide{opacity:0;visibility:hidden;pointer-events:none}
+  #pgLoader__welcome{font-size:.72rem;font-weight:600;letter-spacing:3px;
+    text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.6rem;
+    animation:loaderPop .65s cubic-bezier(.2,0,0,1) both}
   #pgLoader__name{font-family:'Roboto Slab',serif;font-size:2.2rem;font-weight:700;
     color:#fff;letter-spacing:-.5px;text-align:center;line-height:1.2;
-    animation:loaderPop .65s cubic-bezier(.2,0,0,1) both}
+    animation:loaderPop .65s .08s cubic-bezier(.2,0,0,1) both}
   #pgLoader__sub{font-size:.75rem;font-weight:500;letter-spacing:2px;
     color:rgba(255,255,255,.45);text-transform:uppercase;margin-top:.4rem;
     animation:loaderPop .65s .1s cubic-bezier(.2,0,0,1) both}
@@ -418,8 +421,9 @@
 </head>
 <body>
 <div id="pgLoader" style="position:fixed;inset:0;z-index:10000;background:linear-gradient(135deg,#1e1b4b 0%,#312e81 52%,#831843 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;">
+  <div id="pgLoader__welcome">Welcome</div>
   <div id="pgLoader__name">Kofi Ampomah</div>
-  <div id="pgLoader__sub">PhD · UA-SPECTRAL Lab</div>
+  <div id="pgLoader__sub">PhD Student in Computer Science &nbsp;·&nbsp; UA-SPECTRAL Lab</div>
   <div id="pgLoader__bar"><div id="pgLoader__fill"></div></div>
 </div>
   
