@@ -57,6 +57,27 @@
   <link rel="stylesheet" href="ananke/css/custom.min.css">
 
   <style>
+  /* ── Page loader ── */
+  #pgLoader{position:fixed;inset:0;z-index:10000;
+    background:linear-gradient(135deg,#1e1b4b 0%,#312e81 52%,#831843 100%);
+    display:flex;align-items:center;justify-content:center;flex-direction:column;
+    transition:opacity .55s ease,visibility .55s ease}
+  #pgLoader.hide{opacity:0;visibility:hidden;pointer-events:none}
+  #pgLoader__name{font-family:'Roboto Slab',serif;font-size:2.2rem;font-weight:700;
+    color:#fff;letter-spacing:-.5px;text-align:center;line-height:1.2;
+    animation:loaderPop .65s cubic-bezier(.2,0,0,1) both}
+  #pgLoader__sub{font-size:.75rem;font-weight:500;letter-spacing:2px;
+    color:rgba(255,255,255,.45);text-transform:uppercase;margin-top:.4rem;
+    animation:loaderPop .65s .1s cubic-bezier(.2,0,0,1) both}
+  #pgLoader__bar{width:120px;height:2px;background:rgba(255,255,255,.12);
+    border-radius:2px;margin:1.25rem auto 0;overflow:hidden;
+    animation:loaderPop .65s .15s cubic-bezier(.2,0,0,1) both}
+  #pgLoader__fill{height:100%;width:0;border-radius:2px;
+    background:linear-gradient(90deg,#4ade80,#bbf7d0);
+    animation:loaderFill 1.1s .3s cubic-bezier(.4,0,.2,1) forwards}
+  @keyframes loaderPop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes loaderFill{from{width:0}to{width:100%}}
+
   /* ── Classy show-more button ── */
   .show-more-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;
     margin-top:.9rem;padding:.65rem 1.25rem;
@@ -396,6 +417,11 @@
   </style>
 </head>
 <body>
+<div id="pgLoader">
+  <div id="pgLoader__name">Kofi Ampomah</div>
+  <div id="pgLoader__sub">PhD · UA-SPECTRAL Lab</div>
+  <div id="pgLoader__bar"><div id="pgLoader__fill"></div></div>
+</div>
   
 
 
@@ -1638,6 +1664,14 @@
 
 <script>
 (function () {
+  /* ── Page loader ── */
+  var pgLoader = document.getElementById('pgLoader');
+  function hideLoader() {
+    if (pgLoader) { pgLoader.classList.add('hide'); setTimeout(function(){ pgLoader.remove(); }, 600); }
+  }
+  window.addEventListener('load', function () { setTimeout(hideLoader, 400); });
+  setTimeout(hideLoader, 3500);
+
   /* ── Dark mode ── */
   var dmBtn       = document.getElementById('dmBtn');
   var dmBtnMobile = document.getElementById('dmBtnMobile');
