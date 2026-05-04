@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kofi Ampomah — PhD · AI Security &amp; Privacy</title>
+  <meta name="description" content="PhD Student in Computer Science · UA-SPECTRAL Lab · University of Alabama. Research in usable security &amp; privacy, human-centered computing, adversarial ML, and AI security.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph / link-preview tags -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://kampomah.github.io/my_personalphd_website/">
+  <meta property="og:title"       content="Kofi Ampomah — PhD Student in Computer Science">
+  <meta property="og:description" content="PhD Researcher at UA-SPECTRAL Lab · Usable Security &amp; Privacy · Human-Centered Computing · AI Security · Adversarial ML · Seeking Summer 2027 Research Internship">
+  <meta property="og:image"       content="https://kampomah.github.io/my_personalphd_website/images/profile.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:title"      content="Kofi Ampomah — PhD · AI Security &amp; Privacy">
+  <meta name="twitter:description" content="PhD Researcher · Usable Security &amp; Privacy · Human-Centered Computing · AI Security · Adversarial ML · Seeking Summer 2027 Research Internship">
+  <meta name="twitter:image"      content="https://kampomah.github.io/my_personalphd_website/images/profile.jpg">
+  <link rel="canonical"           href="https://kampomah.github.io/my_personalphd_website/">
+  <meta name="keywords"           content="Kofi Ampomah, PhD, Computer Science, Usable Security, Privacy, Human-Centered Computing, Adversarial ML, AI Security, University of Alabama, UA-SPECTRAL Lab, Machine Learning, Trustworthy AI">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kofi Ampomah",
+    "url": "https://kampomah.github.io/my_personalphd_website/",
+    "image": "https://kampomah.github.io/my_personalphd_website/images/profile.jpg",
+    "jobTitle": "PhD Student in Computer Science",
+    "description": "PhD Researcher at UA-SPECTRAL Lab, University of Alabama. Research in usable security and privacy, human-centered computing, adversarial ML, and AI security.",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "The University of Alabama",
+      "url": "https://www.ua.edu/"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "University of Ghana"},
+      {"@type": "CollegeOrUniversity", "name": "Ghana Communication Technology University"}
+    ],
+    "sameAs": [
+      "https://github.com/Ampomah-Kofi",
+      "https://www.linkedin.com/in/kofi-ampomah-306771189/",
+      "https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en"
+    ],
+    "email": "kampomah@crimson.ua.edu",
+    "knowsAbout": ["Usable Security and Privacy", "Human-Centered Computing", "Adversarial Machine Learning", "AI Security", "Trustworthy AI", "Bot Ecosystems", "Natural Language Processing"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;700&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <link rel="stylesheet" href="/my_personalphd_website/ananke/css/custom.min.css">
+
+  <style>
+  /* ── Classy show-more button ── */
+  .show-more-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;
+    margin-top:.9rem;padding:.65rem 1.25rem;
+    background:linear-gradient(135deg,rgba(67,56,202,.07),rgba(158,27,50,.05));
+    border:1.5px solid rgba(67,56,202,.22);border-radius:12px;
+    color:var(--primary);font-size:.82rem;font-weight:600;cursor:pointer;
+    transition:border-color .22s,box-shadow .22s,transform .22s,color .22s,background .22s;
+    font-family:roboto,sans-serif;letter-spacing:.3px;position:relative;overflow:hidden}
+  .show-more-btn i{transition:transform .3s cubic-bezier(.2,0,0,1)}
+  .show-more-btn.expanded i{transform:rotate(180deg)}
+  .show-more-btn:hover{border-color:rgba(67,56,202,.42);box-shadow:0 4px 18px rgba(67,56,202,.14);
+    transform:translateY(-1px);color:var(--primary-dark);
+    background:linear-gradient(135deg,rgba(67,56,202,.12),rgba(158,27,50,.08))}
+  .show-more-btn--dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.85)}
+  .show-more-btn--dark:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.35);
+    color:#fff;box-shadow:0 4px 18px rgba(0,0,0,.22)}
+
+  /* ── Hire / availability popup ── */
+  .hire-popup{position:fixed;bottom:8.5rem;left:1.5rem;z-index:9996;width:258px;
+    background:linear-gradient(140deg,#18104a 0%,#29207a 55%,#18104a 100%);
+    border:1px solid rgba(74,222,128,.38);border-radius:16px;
+    padding:1.15rem 1.35rem 1.1rem;
+    box-shadow:0 0 0 1px rgba(74,222,128,.1),0 10px 36px rgba(0,0,0,.6),0 0 40px rgba(74,222,128,.1);
+    transform:translateY(140%);opacity:0;pointer-events:none;
+    transition:transform .55s cubic-bezier(.2,0,0,1),opacity .5s;font-family:roboto,sans-serif}
+  .hire-popup.visible{transform:translateY(0);opacity:1;pointer-events:all}
+  .hire-popup__close{position:absolute;top:.55rem;right:.65rem;background:rgba(255,255,255,.1);
+    border:none;width:22px;height:22px;border-radius:50%;color:rgba(255,255,255,.58);
+    font-size:.68rem;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    transition:background .15s,color .15s}
+  .hire-popup__close:hover{background:rgba(255,255,255,.22);color:#fff}
+  .hire-popup__dot{width:8px;height:8px;border-radius:50%;background:#4ade80;
+    box-shadow:0 0 0 3px rgba(74,222,128,.25),0 0 10px rgba(74,222,128,.8);
+    animation:internshipPulse 2s ease-in-out infinite;margin-bottom:.6rem}
+  .hire-popup__eyebrow{font-size:.62rem;font-weight:700;letter-spacing:1.4px;
+    text-transform:uppercase;color:#4ade80;margin-bottom:.32rem}
+  .hire-popup__title{font-size:.9rem;color:#fff;line-height:1.4;margin-bottom:.28rem}
+  .hire-popup__title strong{font-weight:700;color:#bbf7d0}
+  .hire-popup__sub{font-size:.76rem;color:rgba(255,255,255,.58);line-height:1.5;margin-bottom:.8rem}
+  .hire-popup__cta{display:inline-flex;align-items:center;gap:.32rem;
+    background:rgba(74,222,128,.18);border:1px solid rgba(74,222,128,.42);
+    color:#bbf7d0;font-size:.74rem;font-weight:600;padding:.38rem .92rem;
+    border-radius:8px;text-decoration:none;transition:background .15s,color .15s}
+  .hire-popup__cta:hover{background:rgba(74,222,128,.32);color:#fff}
+  @media(max-width:480px){.hire-popup{bottom:6rem;left:.75rem;width:calc(100vw - 1.5rem)}}
+
+  /* ── Scroll progress bar ── */
+  .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;
+    background:linear-gradient(90deg,#4338CA,#9e1b32);
+    z-index:201;pointer-events:none;
+    box-shadow:0 0 7px rgba(158,27,50,.45);
+    transition:width .08s linear}
+
+  /* ── Back to top ── */
+  .back-to-top{position:fixed;bottom:7.5rem;right:1.5rem;z-index:9995;
+    width:42px;height:42px;border-radius:50%;
+    background:linear-gradient(135deg,#4338CA,#3730A3);
+    border:none;color:#fff;font-size:.85rem;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 16px rgba(67,56,202,.45);
+    opacity:0;transform:translateY(14px);pointer-events:none;
+    transition:opacity .25s,transform .25s,box-shadow .2s}
+  .back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:all}
+  .back-to-top:hover{box-shadow:0 6px 22px rgba(67,56,202,.6);transform:translateY(-3px)}
+  @media(max-width:480px){.back-to-top{bottom:5.5rem;right:.75rem;width:38px;height:38px}}
+
+  /* ── Nav brand (KA initials) ── */
+  .nav__brand{position:absolute;left:1.5rem;top:50%;transform:translateY(-50%);
+    font-family:'Roboto Slab',serif;font-size:1.1rem;font-weight:700;
+    color:#fff;letter-spacing:.5px;opacity:.88;text-decoration:none;
+    transition:opacity .15s,color .15s}
+  .nav__brand:hover{opacity:1;color:#fff}
+  @media(max-width:680px){.nav__brand{left:1rem;font-size:.9rem}}
+
+  /* ── Nav scrollspy active state ── */
+  .nav__link.active{background:rgba(255,255,255,.18);color:#fff}
+
+  /* ── Two-color override: garnet replaces pink ── */
+  :root{--accent:#9e1b32;--accent-dark:#7a1325;--accent-tint:rgba(158,27,50,.08)}
+
+  /* ── Typing animation ── */
+  .hero-type{font-family:'Roboto Mono',monospace;font-size:.88rem;
+    color:rgba(255,255,255,.72);min-height:1.5rem;letter-spacing:.2px;
+    display:flex;align-items:center;margin-bottom:.3rem}
+  .hero-type__cursor{width:2px;height:1rem;background:rgba(255,255,255,.8);
+    animation:cBlink .75s ease-in-out infinite;flex-shrink:0;margin-left:2px}
+  @keyframes cBlink{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
+
+  /* ── Section dot navigator ── */
+  .section-nav{position:fixed;right:1.5rem;bottom:13.5rem;z-index:9993;
+    display:flex;flex-direction:column;gap:.22rem;align-items:flex-end}
+  .sn-item{display:flex;align-items:center;gap:.42rem;background:none;border:none;
+    cursor:pointer;padding:.08rem 0;opacity:.48;transition:opacity .18s}
+  .sn-item:hover,.sn-item.active{opacity:1}
+  .sn-dot{width:7px;height:7px;border-radius:50%;
+    background:rgba(255,255,255,.4);border:1.5px solid rgba(255,255,255,.55);
+    flex-shrink:0;transition:background .2s,transform .2s,box-shadow .2s;
+    box-shadow:0 0 4px rgba(0,0,0,.35);order:2}
+  .sn-item.active .sn-dot{background:#4338CA;border-color:#4338CA;
+    box-shadow:0 0 8px rgba(67,56,202,.75);transform:scale(1.5)}
+  .sn-label{font-family:roboto,sans-serif;font-size:.6rem;font-weight:700;
+    letter-spacing:.3px;color:rgba(255,255,255,.9);
+    background:rgba(8,6,18,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    padding:.2rem .52rem;border-radius:6px;white-space:nowrap;order:1;
+    opacity:0;transform:translateX(5px);pointer-events:none;
+    transition:opacity .15s,transform .15s;border:1px solid rgba(255,255,255,.08)}
+  .sn-item:hover .sn-label,.sn-item.active .sn-label{opacity:1;transform:translateX(0)}
+  @media(max-width:768px){.section-nav{display:none}}
+
+  /* ── Dark mode toggle button ── */
+  .dm-btn{background:transparent;border:1px solid rgba(255,255,255,.2);
+    color:rgba(255,255,255,.72);font-size:.76rem;cursor:pointer;
+    padding:.28rem .52rem;border-radius:8px;
+    display:flex;align-items:center;gap:.32rem;line-height:1;
+    font-family:roboto,sans-serif;font-weight:600;letter-spacing:.2px;
+    transition:color .15s,background .15s,border-color .15s;
+    position:absolute;right:3.75rem;top:50%;transform:translateY(-50%)}
+  .dm-btn:hover{color:#fff;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
+  @media(max-width:680px){.dm-btn{right:3.25rem;font-size:.68rem;padding:.25rem .42rem}}
+
+  /* ── Dark mode overrides ── */
+  html.dark body{background:#07050f!important;color:#c8c5e0}
+  html.dark section{background:#0e0c1c!important}
+  html.dark nav.nav{background:rgba(7,5,20,.98)!important}
+  /* Only darken light-background cards; leave dark gradient cards alone */
+  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#07111a"]):not([style*="07111a"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) {
+    background:#181626!important;border-color:rgba(255,255,255,.08)!important}
+  html.dark .section-title{color:#e2e0f0!important}
+  html.dark .section-sub{color:rgba(185,180,220,.62)!important}
+  html.dark .section-label{background:rgba(255,255,255,.09)!important;color:rgba(185,180,220,.55)!important}
+  html.dark footer{background:#07050f!important;border-top-color:rgba(255,255,255,.07)!important}
+  html.dark footer a{color:rgba(255,255,255,.45)!important}
+  html.dark footer .footer__inner>span{color:rgba(255,255,255,.45)!important}
+  html.dark .hero-wave path{fill:#0e0c1c!important}
+  html.dark .section-blob{opacity:.08}
+  /* Text inside light cards */
+  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) p,
+  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) li {
+    color:rgba(190,186,220,.76)!important}
+  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) h3 {
+    color:#dddaee!important}
+  html.dark .skill-badge:not(.skill-badge--accent){background:rgba(67,56,202,.1)!important;
+    color:rgba(185,180,220,.72)!important;border-color:rgba(67,56,202,.2)!important}
+  html.dark .show-more-btn:not(.show-more-btn--dark){background:rgba(67,56,202,.09)!important;
+    border-color:rgba(67,56,202,.22)!important;color:rgba(185,180,220,.8)!important}
+  html.dark .news-badge{background:rgba(67,56,202,.2)!important;color:rgba(185,180,220,.82)!important}
+  html.dark .award-card{background:#1c1a2e!important;border-color:rgba(255,255,255,.07)!important}
+  html.dark .interest-item__icon{background:linear-gradient(135deg,#2a228a,#7a1325)!important}
+  html.dark .news-title,html.dark .award-card__title{color:#dddaee!important}
+  html.dark .news-sub,html.dark .award-card__org{color:rgba(185,180,220,.65)!important}
+  html.dark a:not(.nav__link):not(.hero-social):not(.btn):not(.hire-popup__cta):not([style*="color:#fff"]){color:#7b94f8}
+
+  /* ── Dark mode: comprehensive inline-color fixes ── */
+  html.dark [style*="color:#1e1b4b"]{color:#e2e0f0!important}
+  html.dark [style*="color:#374151"]{color:rgba(185,180,220,.82)!important}
+  html.dark [style*="color:#6b7280"]{color:rgba(185,180,220,.58)!important}
+  html.dark [style*="color:#9ca3af"]{color:rgba(185,180,220,.42)!important}
+  html.dark [style*="color:#3730A3"]{color:#a5b4fc!important}
+  html.dark [style*="color:#4338CA"]:not(.nav__link):not(.hero-social):not(.btn):not(.hire-popup__cta){color:#a5b4fc!important}
+  html.dark [style*="color:#9e1b32"]{color:#fda4af!important}
+  html.dark [style*="color:#7a1325"]{color:#fda4af!important}
+  html.dark [style*="color:var(--accent)"]{color:#fda4af!important}
+  html.dark [style*="color:var(--primary)"]:not(.btn):not(.show-more-btn){color:#a5b4fc!important}
+  /* Country card text */
+  html.dark .country-card__name{color:#e2e0f0!important}
+  html.dark .country-card__tag{color:rgba(185,180,220,.55)!important}
+  /* Topic chips */
+  html.dark .chip--garnet{background:rgba(158,27,50,.22)!important;color:#fda4af!important;border-color:rgba(158,27,50,.35)!important}
+  html.dark .chip--indigo{background:rgba(67,56,202,.18)!important;color:#a5b4fc!important;border-color:rgba(67,56,202,.3)!important}
+  /* Scholar metrics panel */
+  html.dark .scholar-stat{background:rgba(255,255,255,.04)!important;border-color:rgba(255,255,255,.08)!important}
+  html.dark .scholar-stat__num{color:#e2e0f0!important}
+  html.dark .scholar-stat__label{color:rgba(185,180,220,.6)!important}
+  /* Publication card text */
+  html.dark .pub-card__title{color:#e2e0f0!important}
+  html.dark .pub-card__authors{color:rgba(185,180,220,.75)!important}
+  html.dark .pub-card__venue{color:rgba(185,180,220,.52)!important}
+  /* Skill card headings */
+  html.dark .skill-card__head{color:#e2e0f0!important}
+  /* Travel section categories */
+  html.dark .travel-path{border-color:rgba(255,255,255,.12)!important}
+  /* Section category labels */
+  html.dark [style*="color:var(--primary-dark)"]:not(.btn){color:#a5b4fc!important}
+
+  /* ── CV Modal ── */
+  .cv-modal{position:fixed;inset:0;z-index:99999;display:none;
+    align-items:center;justify-content:center}
+  .cv-modal.open{display:flex}
+  .cv-modal__bd{position:absolute;inset:0;background:rgba(0,0,0,.75);
+    backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);cursor:pointer}
+  .cv-modal__box{position:relative;z-index:1;
+    width:min(92vw,820px);height:min(90vh,950px);
+    background:#fff;border-radius:14px;overflow:hidden;
+    display:flex;flex-direction:column;
+    box-shadow:0 28px 65px rgba(0,0,0,.75)}
+  .cv-modal__head{display:flex;align-items:center;justify-content:space-between;
+    padding:.7rem 1.25rem;background:linear-gradient(135deg,#1e1b4b,#4338CA);flex-shrink:0}
+  .cv-modal__title{font-family:'Roboto Slab',serif;font-size:.93rem;font-weight:700;color:#fff}
+  .cv-modal__close{background:rgba(255,255,255,.15);border:none;color:#fff;
+    width:26px;height:26px;border-radius:50%;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;font-size:.75rem;
+    transition:background .15s}
+  .cv-modal__close:hover{background:rgba(255,255,255,.3)}
+  .cv-modal__frame{flex:1;border:none;width:100%;min-height:0}
+  .cv-modal__foot{padding:.55rem 1.25rem;background:#f8f9fe;flex-shrink:0;
+    display:flex;justify-content:space-between;align-items:center;
+    border-top:1px solid rgba(0,0,0,.06)}
+  .cv-modal__note{font-size:.74rem;color:#9ca3af}
+  .cv-modal__dl{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;
+    font-weight:600;color:#4338CA;text-decoration:none;
+    padding:.4rem 1rem;border:1.5px solid rgba(67,56,202,.28);border-radius:8px;
+    transition:background .15s}
+  .cv-modal__dl:hover{background:rgba(67,56,202,.06)}
+
+  /* ── Talks section ── */
+  .talk-item{display:flex;gap:1rem;align-items:flex-start;padding:.85rem 1rem;
+    border-radius:10px;background:#4338CA0d;margin-bottom:.6rem}
+  html.dark .talk-item{background:rgba(67,56,202,.08)!important}
+  .talk-item__icon{width:36px;height:36px;border-radius:9px;
+    background:linear-gradient(135deg,#4338CA,#9e1b32);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:.85rem;flex-shrink:0}
+  .talk-item__type{font-size:.6rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+    color:#4338CA;margin-bottom:.15rem}
+  .talk-item__title{font-size:.9rem;font-weight:600;color:#1e1b4b;line-height:1.35;margin-bottom:.15rem}
+  .talk-item__venue{font-size:.78rem;color:#6b7280;margin-bottom:.12rem}
+  .talk-item__date{font-size:.7rem;color:#9ca3af}
+
+  /* ── Teaching section ── */
+  .teaching-course{display:flex;gap:.75rem;align-items:flex-start;padding:.7rem 0;
+    border-bottom:1px solid rgba(67,56,202,.08)}
+  .teaching-course:last-child{border-bottom:none}
+  .teaching-course__icon{width:30px;height:30px;border-radius:8px;
+    background:linear-gradient(135deg,#4338CA,#9e1b32);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:.72rem;flex-shrink:0;margin-top:.1rem}
+  .teaching-course__code{font-size:.65rem;font-weight:700;letter-spacing:.5px;
+    text-transform:uppercase;color:#4338CA;margin-bottom:.1rem}
+  .teaching-course__name{font-size:.88rem;font-weight:600;color:#1e1b4b;margin-bottom:.1rem}
+  .teaching-course__meta{font-size:.76rem;color:#6b7280}
+
+  /* ── Resources / Reading list ── */
+  .resource-item{display:flex;gap:.65rem;align-items:flex-start;padding:.72rem 0;
+    border-bottom:1px solid rgba(67,56,202,.07)}
+  .resource-item:last-child{border-bottom:none}
+  html.dark .resource-item{border-bottom-color:rgba(255,255,255,.06)!important}
+  .resource-item__icon{width:30px;height:30px;border-radius:8px;
+    background:linear-gradient(135deg,#4338CA,#9e1b32);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:.72rem;flex-shrink:0;margin-top:.1rem}
+  .resource-tag{font-size:.58rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+    padding:.1rem .48rem;border-radius:20px;display:inline-block;margin-bottom:.18rem}
+  .resource-tag--paper{background:#EEF2FF;color:#4338CA}
+  .resource-tag--tool{background:#fce8ea;color:#7a1325}
+  .resource-tag--course{background:#f0fdf4;color:#166534}
+  .resource-item__title{font-size:.87rem;font-weight:600;color:#1e1b4b;
+    margin-bottom:.1rem;line-height:1.35}
+  .resource-item__title a{color:inherit;text-decoration:none}
+  .resource-item__title a:hover{color:#4338CA;text-decoration:underline;text-underline-offset:2px}
+  .resource-item__desc{font-size:.77rem;color:#6b7280;line-height:1.5}
+
+  /* ── GitHub activity chart ── */
+  .gh-chart-wrap{margin-top:1rem;border-radius:10px;overflow:hidden;background:#0d1117;padding:.75rem .85rem}
+  .gh-chart-wrap img{width:100%;display:block;border-radius:6px}
+  .gh-chart-wrap p{font-size:.68rem;color:rgba(0,210,255,.45);text-align:center;
+    font-family:'Roboto Mono',monospace;letter-spacing:1px;margin-top:.5rem}
+
+  /* ── Accessibility ── */
+  /* Skip to main content */
+  .skip-link{position:fixed;left:-100%;top:.75rem;z-index:100001;
+    background:#4338CA;color:#fff!important;padding:.52rem 1.25rem;
+    border-radius:0 8px 8px 0;font-size:.88rem;font-weight:700;
+    text-decoration:none;transition:left .2s;
+    box-shadow:0 4px 16px rgba(67,56,202,.5);letter-spacing:.2px}
+  .skip-link:focus{left:0;outline:none}
+  html.dark .skip-link{background:#a5b4fc;color:#0e0c1c!important}
+  /* Focus-visible ring for keyboard users */
+  :focus-visible{outline:2.5px solid #4338CA;outline-offset:3px;border-radius:3px}
+  html.dark :focus-visible{outline-color:#a5b4fc}
+  /* Extra specificity for buttons and links */
+  a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
+    outline:2.5px solid #4338CA;outline-offset:3px;border-radius:4px}
+  html.dark a:focus-visible,html.dark button:focus-visible,
+  html.dark [tabindex]:focus-visible{outline-color:#a5b4fc}
+  /* Respect user's reduced-motion preference */
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:.01ms!important;animation-iteration-count:1!important;
+      transition-duration:.01ms!important}}
+
+  /* ── Touch targets ≥ 44px (WCAG 2.5.5) ── */
+  .btn{min-height:44px}
+  .hero-social{min-height:44px}
+  .show-more-btn{min-height:44px}
+  .nav__hamburger{min-height:44px;min-width:44px}
+
+  /* ── Mobile: internship banner stacks on narrow screens ── */
+  @media(max-width:520px){
+    .internship-banner{flex-direction:column;align-items:flex-start;gap:.65rem}
+    .internship-banner__cta{align-self:stretch;text-align:center;justify-content:center;display:block;padding:.52rem 1.1rem}
+    .internship-banner__main{font-size:.82rem}
+  }
+
+  /* ── Mobile: hero photo scales on very small screens ── */
+  @media(max-width:380px){
+    .hero-photo,.hero-photo-fallback{width:140px;height:140px}
+    .hero-name{font-size:1.75rem!important}
+  }
+
+  /* ── Mobile: tighter hero spacing at 400px ── */
+  @media(max-width:400px){
+    .hero-chips,.hero-socials{gap:.3rem}
+    .hero-btns{flex-direction:column;align-items:stretch}
+    .hero-btns .btn{justify-content:center}
+    .btn{font-size:.82rem;padding:.55rem 1.1rem}
+  }
+
+  /* ── Mobile: news items stack badge above text ── */
+  @media(max-width:480px){
+    .news-item{flex-direction:column;gap:.35rem}
+    .news-badge{align-self:flex-start}
+    .pub-card{flex-direction:column;gap:.75rem}
+    .pub-card__year{width:44px;height:44px;font-size:.75rem}
+  }
+
+  /* ── Mobile: award cards stack icon/text/year ── */
+  @media(max-width:440px){
+    .award-card{flex-wrap:wrap}
+    .award-card__year{margin-left:auto}
+  }
+  </style>
+</head>
+<body>
+  
+
+
+<a class="skip-link" href="#home">Skip to main content</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="wave-bg"></div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Internship availability popup -->
+<div class="hire-popup" id="hirePopup" role="dialog" aria-label="Internship availability">
+  <button class="hire-popup__close" id="hirePopupClose" aria-label="Close">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <div class="hire-popup__dot"></div>
+  <p class="hire-popup__eyebrow"><i class="fa-solid fa-microchip" style="margin-right:.3rem;font-size:.9em"></i> Open to Opportunities</p>
+  <p class="hire-popup__title">Seeking a<br><strong>Summer 2027 Research Internship</strong></p>
+  <p class="hire-popup__sub">AI Security &nbsp;·&nbsp; Adversarial ML &nbsp;·&nbsp; Privacy<br>Available May 2027</p>
+  <a href="#contact" class="hire-popup__cta">Get in touch <i class="fa-solid fa-arrow-right" style="font-size:.62rem"></i></a>
+</div>
+
+
+<nav class="nav" role="navigation" aria-label="Primary navigation">
+  <a href="#home" class="nav__brand" aria-label="Kofi Ampomah — go to top">KA</a>
+  <button class="dm-btn" id="dmBtn" title="Toggle dark mode" aria-label="Toggle dark mode">
+    <i class="fa-solid fa-moon"></i> Dark
+  </button>
+  <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__links" id="navLinks">
+    <a href="#about"           class="nav__link">About</a>
+    <a href="#news"            class="nav__link">News</a>
+    <a href="#awards"          class="nav__link">Awards</a>
+    <a href="#experience"      class="nav__link">Experience</a>
+    <a href="#skills"          class="nav__link">Skills</a>
+    <a href="#research"        class="nav__link">Research</a>
+    <a href="#publications"    class="nav__link">Publications</a>
+    <a href="#countries"       class="nav__link">Countries</a>
+    <a href="#certifications"  class="nav__link">Certifications</a>
+    <a href="#contact"         class="nav__link">Contact</a>
+  </div>
+</nav>
+
+
+<section id="home" class="hero-section" role="main" aria-label="Introduction">
+  <div class="hero-inner">
+
+    
+    <div class="hero-photo-wrap">
+      <img src="/my_personalphd_website/images/profile.jpg"
+           alt="Kofi Ampomah"
+           class="hero-photo"
+           onerror="this.closest('.hero-photo-wrap').style.display='none';">
+    </div>
+
+    
+    <div class="hero-content">
+      <h1 class="hero-name">Kofi Ampomah</h1>
+      <p class="hero-role">PhD Student &nbsp;·&nbsp; Computer Science</p>
+      <p class="hero-type" aria-label="Researcher roles"><span id="heroType" aria-live="polite" aria-atomic="true"></span><span class="hero-type__cursor" aria-hidden="true"></span></p>
+      <p class="hero-inst">The University of Alabama, Tuscaloosa &nbsp;·&nbsp; Advisor: <a href="https://lenhattu.com/#about" target="_blank" rel="noopener" style="color:rgba(255,255,255,.75);text-decoration:underline;text-underline-offset:2px;font-weight:500;">Dr. Tu Le</a></p>
+
+      <div class="hero-divider"></div>
+
+      <p class="hero-bio">
+        I study how AI systems <strong style="color:#fff;font-weight:600;">fail, get exploited, and put users at risk</strong> —
+        and how to build them to be safe, transparent, and accountable.
+        Based at the <strong style="color:#fff;font-weight:600;">UA-SPECTRAL Lab</strong>, my work sits at the intersection of
+        machine learning security, privacy engineering, and real-world platform safety.
+      </p>
+
+      <div class="hero-chips">
+        <span class="hero-chip">Usable Security &amp; Privacy</span>
+        <span class="hero-chip">Human-Centered Computing</span>
+        <span class="hero-chip">AI Security</span>
+        <span class="hero-chip">Adversarial ML</span>
+        <span class="hero-chip">Trustworthy AI</span>
+        <span class="hero-chip">Bot Ecosystems</span>
+      </div>
+
+      
+      <div class="hero-socials">
+        <a href="mailto:kampomah@crimson.ua.edu" class="hero-social">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a href="https://github.com/Ampomah-Kofi" target="_blank" rel="noopener" class="hero-social">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/kofi-ampomah-306771189/" target="_blank" rel="noopener" class="hero-social">
+          <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en" target="_blank" rel="noopener" class="hero-social">
+          <i class="fa-solid fa-graduation-cap"></i> Scholar
+        </a>
+      </div>
+
+      
+      <div class="internship-banner">
+        <div class="internship-banner__pulse"><span class="internship-dot"></span></div>
+        <div class="internship-banner__text">
+          <p class="internship-banner__eyebrow"><i class="fa-solid fa-microchip" style="margin-right:.3rem;font-size:.9em"></i> Open to Opportunities</p>
+          <p class="internship-banner__main">Actively seeking a <strong>Summer 2027 Research Internship</strong> &mdash; AI Security &nbsp;·&nbsp; Adversarial ML &nbsp;·&nbsp; Privacy &nbsp;·&nbsp; Available May 2027</p>
+        </div>
+        <a href="#contact" class="internship-banner__cta">Get in touch &rarr;</a>
+      </div>
+
+      <div class="hero-btns">
+        <a href="/my_personalphd_website/Kofi_Ampomah_Resume.pdf" target="_blank" rel="noopener" class="btn btn--white"><i class="fa-solid fa-file-pdf" style="margin-right:.4rem;font-size:.8rem;"></i>View CV</a>
+        <a href="#publications" class="btn btn--ghost"><i class="fa-solid fa-file-lines" style="margin-right:.4rem;font-size:.8rem;"></i>Publications</a>
+        <a href="#contact"      class="btn btn--ghost"><i class="fa-solid fa-paper-plane" style="margin-right:.4rem;font-size:.8rem;"></i>Contact</a>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div class="hero-wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70" preserveAspectRatio="none" height="70">
+      <path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#d8e0ff"/>
+    </svg>
+  </div>
+</section>
+
+
+<section id="about" aria-label="About Me" style="padding:4rem 0;position:relative;overflow:hidden;background:#f0f3ff;">
+  <div class="section-blob section-blob--indigo" style="width:320px;height:320px;top:-80px;right:-80px;"></div>
+  <div class="section-blob section-blob--garnet" style="width:240px;height:240px;bottom:-60px;left:-60px;"></div>
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title">Background &amp; Interests</h2>
+      <p class="section-sub">An international student from Ghana pursuing a PhD in the USA — with research centred on <strong>security, privacy, and trustworthy AI</strong>.</p>
+    </div>
+
+    
+    <div class="card reveal" style="padding:1.3rem 1.75rem;margin-bottom:1.25rem;background:linear-gradient(135deg,#EEF2FF 0%,#f8f9fe 100%);">
+      <div style="display:flex;align-items:flex-start;gap:1rem;">
+        <div style="flex-shrink:0;font-size:1.5rem;line-height:1;padding-top:.1rem;">🌍✈️🇺🇸</div>
+        <p style="font-size:.9375rem;line-height:1.95;color:#374151;">
+          Born and raised in <strong style="color:#9e1b32;">Ghana</strong> (West Africa), I relocated to the
+          <strong style="color:#4338CA;">United States</strong> to pursue doctoral research at
+          The University of Alabama, Tuscaloosa. My path spans two continents —
+          a B.Sc. and M.Sc. from Ghana, and now a PhD at the
+          <strong style="color:#4338CA;">UA-SPECTRAL Lab</strong>, where I focus on keeping AI systems
+          safe, honest, and hard to exploit.
+        </p>
+      </div>
+    </div>
+
+    
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;margin-bottom:1.5rem;">
+      <div class="card stat--primary reveal reveal-delay-1" style="padding:1.25rem;text-align:center;">
+        <p class="stat-num" data-target="3" data-suffix="" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#3730A3;line-height:1;">3</p>
+        <p style="font-size:.75rem;color:#4338CA;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Degrees</p>
+      </div>
+      <div class="card stat--accent reveal reveal-delay-2" style="padding:1.25rem;text-align:center;">
+        <p class="stat-num" data-target="5" data-suffix="+" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#7a1325;line-height:1;">5+</p>
+        <p style="font-size:.75rem;color:#9e1b32;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Yrs Experience</p>
+      </div>
+      <div class="card stat--primary reveal reveal-delay-3" style="padding:1.25rem;text-align:center;">
+        <p class="stat-num" data-target="16" data-suffix="+" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#3730A3;line-height:1;">16+</p>
+        <p style="font-size:.75rem;color:#4338CA;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Certifications</p>
+      </div>
+      <div class="card stat--accent reveal reveal-delay-4" style="padding:1.25rem;text-align:center;">
+        <p class="stat-num" data-target="4" data-suffix="" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#7a1325;line-height:1;">4</p>
+        <p style="font-size:.75rem;color:#9e1b32;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Countries</p>
+      </div>
+    </div>
+
+    
+    <div class="card reveal" style="padding:1.75rem 2rem;margin-bottom:1rem;background:linear-gradient(160deg,#f0f3ff 0%,#f8f9fe 100%);">
+      <h3 style="font-family:'Roboto Slab',serif;font-size:1.15rem;font-weight:600;color:#4338CA;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;"><i class="fa-solid fa-graduation-cap icon-bounce"></i> Education</h3>
+      <div style="display:flex;flex-direction:column;gap:0;">
+
+        
+        <div style="display:flex;gap:1.25rem;align-items:flex-start;padding-bottom:1.5rem;position:relative;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#4338CA,#9e1b32);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">🎓</div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#4338CA22,#9e1b3222);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="padding-top:.3rem;">
+            <p style="font-size:.92rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;"><a href="https://www.ua.edu/" target="_blank" rel="noopener" style="color:#4338CA;text-decoration:underline;text-underline-offset:2px;">The University of Alabama</a></p>
+            <p style="font-size:.85rem;color:#374151;margin-bottom:.15rem;">Doctor of Philosophy (PhD) · Computer Science</p>
+            <p style="font-size:.78rem;color:#6b7280;margin-bottom:.3rem;">Aug 2025 – Present &nbsp;·&nbsp; Tuscaloosa, USA</p>
+            
+            <p style="font-size:.76rem;color:#6b7280;margin-bottom:.3rem;display:flex;align-items:center;gap:.35rem;">
+              <i class="fa-solid fa-user-tie" style="color:#4338CA;font-size:.7rem;"></i>
+              Advisor: <a href="https://lenhattu.com/#about" target="_blank" rel="noopener" style="color:#4338CA;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Dr. Tu Le</a>
+              <span style="color:#9ca3af;">· Asst. Prof., University of Alabama</span>
+            </p>
+            
+            
+          </div>
+        </div>
+        
+        <div style="display:flex;gap:1.25rem;align-items:flex-start;padding-bottom:1.5rem;position:relative;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#4338CA,#9e1b32);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">🏫</div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#4338CA22,#9e1b3222);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="padding-top:.3rem;">
+            <p style="font-size:.92rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;"><a href="https://www.ug.edu.gh/" target="_blank" rel="noopener" style="color:#4338CA;text-decoration:underline;text-underline-offset:2px;">University of Ghana</a></p>
+            <p style="font-size:.85rem;color:#374151;margin-bottom:.15rem;">Master of Science (MS) · Computer Science</p>
+            <p style="font-size:.78rem;color:#6b7280;margin-bottom:.3rem;">Oct 2023 – Aug 2024 &nbsp;·&nbsp; Legon, Ghana</p>
+            
+            <span style="font-size:.72rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:#fce8ea;color:#7a1325;">Best ML with Big Data Analytics Student</span>
+          </div>
+        </div>
+        
+        <div style="display:flex;gap:1.25rem;align-items:flex-start;padding-bottom:1.5rem;position:relative;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#4338CA,#9e1b32);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">🏛️</div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#4338CA22,#9e1b3222);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="padding-top:.3rem;">
+            <p style="font-size:.92rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;"><a href="https://site.gctu.edu.gh/" target="_blank" rel="noopener" style="color:#4338CA;text-decoration:underline;text-underline-offset:2px;">Ghana Communication Technology University</a></p>
+            <p style="font-size:.85rem;color:#374151;margin-bottom:.15rem;">Bachelor of Science (BS) · Computer Engineering</p>
+            <p style="font-size:.78rem;color:#6b7280;margin-bottom:.3rem;">Sep 2018 – Jul 2022 &nbsp;·&nbsp; Accra, Ghana</p>
+            
+            <span style="font-size:.72rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:#fce8ea;color:#7a1325;">First Class Honours</span>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+
+    <div class="card reveal" style="padding:1.35rem 1.75rem;background:#0d1117;margin-top:1rem;">
+      <h3 style="font-family:'Roboto Slab',serif;font-size:1rem;font-weight:600;color:#58a6ff;margin-bottom:.2rem;display:flex;align-items:center;gap:.5rem;">
+        <i class="fa-brands fa-github"></i> GitHub Activity
+        <a href="https://github.com/Ampomah-Kofi" target="_blank" rel="noopener" style="font-size:.72rem;font-weight:500;color:rgba(88,166,255,.5);margin-left:auto;text-decoration:none;">@Ampomah-Kofi ↗</a>
+      </h3>
+      <p style="font-size:.68rem;color:rgba(88,166,255,.38);margin-bottom:.65rem;font-family:'Roboto Mono',monospace;letter-spacing:.8px;">CONTRIBUTION GRAPH · LAST 12 MONTHS</p>
+      <img src="https://ghchart.rshah.org/4338CA/Ampomah-Kofi" alt="GitHub contribution graph" style="width:100%;display:block;border-radius:6px;background:#161b22;padding:.35rem;" onerror="this.closest('.card').style.display='none'">
+    </div>
+  </div>
+</section>
+
+
+<section id="news" style="padding:4rem 0;position:relative;overflow:hidden;background:#f6f8fc;">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label">Latest</span>
+      <h2 class="section-title">News &amp; Updates</h2>
+      <p class="section-sub">Recent milestones, submissions, and highlights from my academic journey.</p>
+    </div>
+    <div class="card reveal" style="padding:1.5rem 2rem;">
+      <div class="news-list">
+
+        <div class="news-item">
+          <span class="news-badge news-badge--new">2026</span>
+          <div class="news-body">
+            <p class="news-title"><i class="fa-solid fa-file-circle-check" style="color:#4338CA;margin-right:.45rem;"></i>Paper Under Review</p>
+            <p class="news-sub"><em>"Beyond Attack Success Rate: A Multi-Metric Evaluation of Adversarial Transferability in Medical Imaging Models"</em> — currently under peer review.</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <span class="news-badge">Aug 2025</span>
+          <div class="news-body">
+            <p class="news-title"><i class="fa-solid fa-graduation-cap" style="color:#4338CA;margin-right:.45rem;"></i>Started PhD at University of Alabama</p>
+            <p class="news-sub">Joined the UA-SPECTRAL Lab under Dr. Tu Le to pursue doctoral research in AI security, adversarial ML, and usable privacy.</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <span class="news-badge">2024</span>
+          <div class="news-body">
+            <p class="news-title"><i class="fa-solid fa-book-open" style="color:#9e1b32;margin-right:.45rem;"></i>First Paper Published</p>
+            <p class="news-sub">Published <em>"Design and Implementation of Coconut Maturity Prediction System Based on Naïve Bayes Classification Algorithm Using Arduino and a Sound Sensor"</em> — IJISRT, 9(1), 2024.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="awards" style="padding:4rem 0;position:relative;overflow:hidden;background:#f0f3ff;">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label">Achievements</span>
+      <h2 class="section-title">Awards &amp; Honors</h2>
+      <p class="section-sub">Academic distinctions and institutional recognition earned across my studies and research career.</p>
+    </div>
+    
+    <div class="card reveal" style="padding:.85rem 1.4rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:1rem;background:linear-gradient(135deg,#3730A3,#7a1325);overflow:hidden;position:relative;">
+      <div style="position:absolute;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.06);top:-30px;right:60px;pointer-events:none;"></div>
+      <div style="width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.3rem;">Π</div>
+      <div>
+        <p style="font-size:.9rem;font-weight:700;color:#fff;margin-bottom:.1rem;">Upsilon Pi Epsilon (UPE) — Computer Science Honor Society</p>
+        <p style="font-size:.78rem;color:rgba(255,255,255,.72);margin:0;">Active member · International CS Honor Society</p>
+      </div>
+      <span style="margin-left:auto;font-size:.68rem;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.85);background:rgba(255,255,255,.15);padding:.22rem .7rem;border-radius:20px;white-space:nowrap;flex-shrink:0;">Current</span>
+    </div>
+
+    <p style="font-family:'Roboto Slab',serif;font-size:.8rem;font-weight:700;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:.65rem;margin-top:.25rem;">🏆 Academic Excellence</p>
+    <div class="awards-grid reveal" style="margin-bottom:1.5rem;">
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Overall Best ML with Big Data Analytics Student</p>
+          <p class="award-card__org">University of Ghana · Department of Computer Science</p>
+        </div>
+        <span class="award-card__year">2024</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#3730A3);">
+          <i class="fa-solid fa-medal"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Overall Second Best Engineering Graduating Student</p>
+          <p class="award-card__org">Ghana Communication Technology University · Faculty of Engineering (Undergraduate)</p>
+        </div>
+        <span class="award-card__year">2023</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#4338CA);">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Innovative Thesis Award</p>
+          <p class="award-card__org">Ghana Communication Technology University · Faculty of Engineering (Undergraduate)</p>
+        </div>
+        <span class="award-card__year">2023</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#3730A3);">
+          <i class="fa-solid fa-square-root-variable"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Overall Best Engineering Mathematics Student</p>
+          <p class="award-card__org">Ghana Communication Technology University · Faculty of Engineering (Undergraduate)</p>
+        </div>
+        <span class="award-card__year">2022</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Overall Best General Science Student</p>
+          <p class="award-card__org">Oda Senior High School</p>
+        </div>
+        <span class="award-card__year">High School</span>
+      </div>
+
+    </div>
+
+    <p style="font-family:'Roboto Slab',serif;font-size:.8rem;font-weight:700;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:.65rem;">🎓 Scholarships &amp; Fellowships</p>
+    <div class="awards-grid reveal">
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#9e1b32);">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Graduate Research Assistantship</p>
+          <p class="award-card__org">The University of Alabama · PhD Fellowship</p>
+        </div>
+        <span class="award-card__year">2025–Present</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#3730A3);">
+          <i class="fa-solid fa-flag"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Government of Ghana Scholarship Award</p>
+          <p class="award-card__org">One-time award of $1,000 to support undergraduate studies</p>
+        </div>
+        <span class="award-card__year">2022</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+          <i class="fa-solid fa-school"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Engineering Student Association Scholarship</p>
+          <p class="award-card__org">GCTU · $500 to support undergraduate thesis</p>
+        </div>
+        <span class="award-card__year">2021–2022</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#9e1b32);">
+          <i class="fa-solid fa-gem"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Newmont Gold Corp Development Foundation Scholarship</p>
+          <p class="award-card__org">$1,200 funded for undergraduate education</p>
+        </div>
+        <span class="award-card__year">2018–2021</span>
+      </div>
+
+      <div class="award-card">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+          <i class="fa-solid fa-gem"></i>
+        </div>
+        <div class="award-card__body">
+          <p class="award-card__title">Newmont Gold Corp Development Foundation Scholarship</p>
+          <p class="award-card__org">$2,500 funded for high school education</p>
+        </div>
+        <span class="award-card__year">2016–2018</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="experience" style="padding:4rem 0;position:relative;overflow:hidden;background:#f6f8fc;">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Work &amp; Research History</h2>
+    </div>
+
+    <div class="card reveal" style="padding:1.75rem 2rem;background:linear-gradient(160deg,#f8f9fe 0%,#fff 100%);">
+      <div style="display:flex;flex-direction:column;gap:0;">
+
+        
+
+        <div class="reveal" style="display:flex;gap:1.25rem;align-items:flex-start;padding:.9rem 1rem;margin-bottom:.6rem;border-radius:10px;background:#4338CA12;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:38px;height:38px;border-radius:10px;background:#4338CA18;border:1.5px solid #4338CA33;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <i class="fa-solid fa-chalkboard-user" style="color:#4338CA;font-size:.9rem;"></i>
+            </div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#4338CA22,transparent);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.25rem;margin-bottom:.25rem;">
+              <p style="font-size:.93rem;font-weight:600;color:#1e1b4b;">Graduate Research &amp; Teaching Assistant</p>
+              <span style="font-size:.75rem;color:#6b7280;white-space:nowrap;">Aug 2025 – Present</span>
+            </div>
+            <p style="font-size:.82rem;font-weight:500;color:#4338CA;margin-bottom:.1rem;">The University of Alabama</p>
+            <p style="font-size:.77rem;color:#9ca3af;margin-bottom:.6rem;">Tuscaloosa, Alabama, USA</p>
+            <ul style="display:flex;flex-direction:column;gap:.3rem;">
+              <li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Designed BotLens, a privacy auditing framework analyzing 183,142 reviews across 23,000 Discord bots.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Trained DeBERTa-v3-large on a 33-concept security and privacy taxonomy, reaching F1 of 0.94 with 30% labeling.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Built end-to-end Python pipeline integrating Playwright scraping, Ollama llama3:8b distillation, and RTX 5090 inference.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Co-authored adversarial transferability study across 7 attacks, CNN and ViT models, and 3,500 configurations.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Led CS 438/538 Computer Networks labs under Prof. Yang Xiao (IEEE Fellow): TCP/IP, DNS, HTTP, Wireshark.</li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+        <div class="reveal" style="display:flex;gap:1.25rem;align-items:flex-start;padding:.9rem 1rem;margin-bottom:.6rem;border-radius:10px;background:#9e1b3212;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:38px;height:38px;border-radius:10px;background:#9e1b3218;border:1.5px solid #9e1b3233;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <i class="fa-solid fa-person-chalkboard" style="color:#9e1b32;font-size:.9rem;"></i>
+            </div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#9e1b3222,transparent);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.25rem;margin-bottom:.25rem;">
+              <p style="font-size:.93rem;font-weight:600;color:#1e1b4b;">Digital Channels Instructor</p>
+              <span style="font-size:.75rem;color:#6b7280;white-space:nowrap;">Jul 2024 – Jul 2025</span>
+            </div>
+            <p style="font-size:.82rem;font-weight:500;color:#9e1b32;margin-bottom:.1rem;">IPMC Ghana</p>
+            <p style="font-size:.77rem;color:#9ca3af;margin-bottom:.6rem;">Greater Accra, Ghana</p>
+            <ul style="display:flex;flex-direction:column;gap:.3rem;">
+              <li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Taught Diploma in Digital Marketing across 3 active cohorts.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Delivered lectures in SEO, social media marketing, web design, and analytics.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Mentored students through scenario-based, real-world project work.</li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+        <div class="reveal" style="display:flex;gap:1.25rem;align-items:flex-start;padding:.9rem 1rem;margin-bottom:.6rem;border-radius:10px;background:#4338CA12;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:38px;height:38px;border-radius:10px;background:#4338CA18;border:1.5px solid #4338CA33;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <i class="fa-solid fa-database" style="color:#4338CA;font-size:.9rem;"></i>
+            </div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#4338CA22,transparent);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.25rem;margin-bottom:.25rem;">
+              <p style="font-size:.93rem;font-weight:600;color:#1e1b4b;">Large Language Model (LLM) Researcher</p>
+              <span style="font-size:.75rem;color:#6b7280;white-space:nowrap;">Jan 2024 – May 2024</span>
+            </div>
+            <p style="font-size:.82rem;font-weight:500;color:#4338CA;margin-bottom:.1rem;">Datamaker GH</p>
+            <p style="font-size:.77rem;color:#9ca3af;margin-bottom:.6rem;">Ghana · Contract</p>
+            <ul style="display:flex;flex-direction:column;gap:.3rem;">
+              <li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Annotated and curated large-scale text datasets for LLM training and evaluation.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Applied structured labeling for quality, consistency, and NLP relevance.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Performed data cleaning, validation, and quality checks to reduce noise and bias.</li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+        <div class="reveal" style="display:flex;gap:1.25rem;align-items:flex-start;padding:.9rem 1rem;margin-bottom:.6rem;border-radius:10px;background:#9e1b3212;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:38px;height:38px;border-radius:10px;background:#9e1b3218;border:1.5px solid #9e1b3233;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <i class="fa-solid fa-chalkboard-user" style="color:#9e1b32;font-size:.9rem;"></i>
+            </div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#9e1b3222,transparent);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.25rem;margin-bottom:.25rem;">
+              <p style="font-size:.93rem;font-weight:600;color:#1e1b4b;">Teaching Assistant &amp; Data Analyst</p>
+              <span style="font-size:.75rem;color:#6b7280;white-space:nowrap;">Jan 2022 – Sep 2023</span>
+            </div>
+            <p style="font-size:.82rem;font-weight:500;color:#9e1b32;margin-bottom:.1rem;">GCTU — Dept. of Computer Engineering</p>
+            <p style="font-size:.77rem;color:#9ca3af;margin-bottom:.6rem;">Accra, Ghana</p>
+            <ul style="display:flex;flex-direction:column;gap:.3rem;">
+              <li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>TA for ENCE 324 Computer Security &amp; Disaster Recovery — labs, grading, student support.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>TA for ENCE 312 Software Engineering — tutorials, project supervision, and assessments.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Managed production academic databases; reduced system downtime by 25% through performance tuning.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Built Excel-based analytical reports using PivotTables, VLOOKUP, and advanced charts.</li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+        <div class="reveal" style="display:flex;gap:1.25rem;align-items:flex-start;padding:.9rem 1rem;margin-bottom:.6rem;border-radius:10px;background:#4338CA12;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:38px;height:38px;border-radius:10px;background:#4338CA18;border:1.5px solid #4338CA33;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <i class="fa-solid fa-code" style="color:#4338CA;font-size:.9rem;"></i>
+            </div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#4338CA22,transparent);margin-top:.4rem;min-height:20px;"></div>
+          </div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.25rem;margin-bottom:.25rem;">
+              <p style="font-size:.93rem;font-weight:600;color:#1e1b4b;">Programming Instructor &amp; Frontend Developer</p>
+              <span style="font-size:.75rem;color:#6b7280;white-space:nowrap;">Jun 2018 – Sep 2020</span>
+            </div>
+            <p style="font-size:.82rem;font-weight:500;color:#4338CA;margin-bottom:.1rem;">Codetrain — Accra Digital Center</p>
+            <p style="font-size:.77rem;color:#9ca3af;margin-bottom:.6rem;">Accra, Ghana</p>
+            <ul style="display:flex;flex-direction:column;gap:.3rem;">
+              <li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Taught beginner software development class — Scrum, Agile basics, and project fundamentals, increasing student project capacity by 79%.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Developed responsive web apps with HTML, CSS, SASS, JavaScript, and Bootstrap.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Built WordPress sites including e-commerce platforms and recruitment dashboards.</li>
+            </ul>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" style="padding:4rem 0;position:relative;overflow:hidden;background:#f6f8fc;">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label">Technical Skills</span>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <p class="section-sub">Languages, frameworks, and platforms I use across research and software development.</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="card skill-card reveal">
+        <div class="skill-card__head"><i class="fa-solid fa-code"></i> Languages</div>
+        <div class="skill-badges">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">LaTeX</span>
+          <span class="skill-badge">HTML / CSS</span>
+          <span class="skill-badge">MATLAB</span>
+        </div>
+      </div>
+
+      <div class="card skill-card reveal reveal-delay-1">
+        <div class="skill-card__head"><i class="fa-solid fa-brain"></i> ML / AI &amp; Security</div>
+        <div class="skill-badges">
+          <span class="skill-badge">PyTorch</span>
+          <span class="skill-badge">TensorFlow</span>
+          <span class="skill-badge">Scikit-learn</span>
+          <span class="skill-badge">Hugging Face</span>
+          <span class="skill-badge">Pandas</span>
+          <span class="skill-badge">OpenCV</span>
+          <span class="skill-badge">DeBERTa / Transformers</span>
+          <span class="skill-badge">CNN / ViT</span>
+          <span class="skill-badge">Adversarial ML</span>
+          <span class="skill-badge">Threat Modeling</span>
+        </div>
+      </div>
+
+      <div class="card skill-card reveal reveal-delay-2 skill-card--agents">
+        <div class="skill-card__head"><i class="fa-solid fa-robot"></i> LLMs, Agents &amp; Tools</div>
+        <div class="skill-badges">
+          <span class="skill-badge skill-badge--accent">LangChain</span>
+          <span class="skill-badge skill-badge--accent">LangGraph</span>
+          <span class="skill-badge skill-badge--accent">AutoGen</span>
+          <span class="skill-badge skill-badge--accent">MCP</span>
+          <span class="skill-badge skill-badge--accent">Claude API</span>
+          <span class="skill-badge skill-badge--accent">Ollama</span>
+          <span class="skill-badge skill-badge--accent">RAG</span>
+          <span class="skill-badge skill-badge--accent">Playwright</span>
+          <span class="skill-badge skill-badge--accent">Git</span>
+          <span class="skill-badge skill-badge--accent">Docker</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="research" aria-label="Research Projects" style="padding:4rem 0;position:relative;overflow:hidden;background:#fff5f5;">
+  <div class="section-blob section-blob--garnet" style="width:300px;height:300px;top:-60px;left:-80px;"></div>
+  <div class="section-blob section-blob--indigo" style="width:200px;height:200px;bottom:-40px;right:-40px;"></div>
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label">Research</span>
+      <h2 class="section-title">Active Projects</h2>
+      <p class="section-sub">Building privacy-preserving, secure, and trustworthy AI systems — with a focus on understanding and defending against real-world threats.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:1rem;">
+
+    
+    <div class="card reveal reveal-delay-1" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#1e1b4b 0%,#312e81 40%,#3730A3 75%,#4338CA 100%);">
+      <div style="position:absolute;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.05);top:-40px;right:-40px;pointer-events:none;"></div>
+      <div style="padding:1.4rem 1.6rem;position:relative;">
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.9rem;">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🤖</div>
+          <div>
+            <h3 style="font-family:'Roboto Slab',serif;font-size:1.05rem;font-weight:700;color:#fff;line-height:1.2;margin-bottom:.1rem;">BotLens</h3>
+            <p style="font-size:.76rem;color:rgba(255,255,255,.62);">Privacy Auditing for Third-Party Community Bots</p>
+          </div>
+        </div>
+        <p style="font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.78);margin-bottom:.8rem;">A privacy auditing framework that analyzes how third-party community bots on Discord, Reddit, and Slack collect and expose user data — surfacing hidden risks and informing platform governance.</p>
+        <ul style="display:flex;flex-direction:column;gap:.3rem;margin-bottom:.9rem;">
+          <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Automated auditing pipeline for bot data-collection behavior</li>
+          <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Analysis of permission scopes and data-access patterns</li>
+          <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Frameworks for communicating privacy risks to non-expert users</li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.65rem;">
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Usable Security &amp; Privacy</span>
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Bot Ecosystems</span>
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Security Auditing</span>
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">NLP</span>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,.12);padding-top:.55rem;">
+          <p style="font-size:.6rem;font-weight:700;letter-spacing:1px;color:rgba(255,255,255,.42);text-transform:uppercase;margin-bottom:.35rem;">Tech Stack</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.3rem;">
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Python</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Playwright</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">DeBERTa-v3-large</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Hugging Face</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Ollama llama3:8b</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">PyTorch</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Pandas</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">RTX 5090</span>
+          </div>
+        </div>
+        <div style="margin-top:.75rem;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.1);">
+          <a href="https://github.com/ua-spectral/Third-Party-Community-Bots-Project" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.38rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.22);padding:.32rem .9rem;border-radius:8px;text-decoration:none;background:rgba(255,255,255,.08);">
+            <i class="fa-brands fa-github"></i> GitHub (Private · Under Review) ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card reveal reveal-delay-2" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#3b0010 0%,#5c0e1e 38%,#7a1325 70%,#9e1b32 100%);">
+      <div style="position:absolute;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.05);top:-40px;left:-40px;pointer-events:none;"></div>
+      <div style="padding:1.4rem 1.6rem;position:relative;">
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.9rem;">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🧠</div>
+          <div>
+            <h3 style="font-family:'Roboto Slab',serif;font-size:1.05rem;font-weight:700;color:#fff;line-height:1.2;margin-bottom:.1rem;">Adversarial Transferability in Medical Imaging</h3>
+            <p style="font-size:.76rem;color:rgba(255,255,255,.62);">Beyond Attack Success Rate</p>
+          </div>
+        </div>
+        <p style="font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.78);margin-bottom:.8rem;">Investigating adversarial transferability — adversarial examples crafted against one model deceiving another — in medical imaging AI, where cross-model vulnerabilities could directly impact patient safety.</p>
+        <ul style="display:flex;flex-direction:column;gap:.3rem;margin-bottom:.9rem;">
+          <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Multi-metric evaluation framework beyond simple attack success rate</li>
+          <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Analysis of transferability patterns across model architectures</li>
+          <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Robustness standards for trustworthy medical AI deployment</li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.65rem;">
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Adversarial ML</span>
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Medical AI</span>
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Trustworthy AI</span>
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Robustness</span>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,.12);padding-top:.55rem;">
+          <p style="font-size:.6rem;font-weight:700;letter-spacing:1px;color:rgba(255,255,255,.42);text-transform:uppercase;margin-bottom:.35rem;">Tech Stack</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.3rem;">
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">PyTorch</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">TensorFlow</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">CNN &amp; ViT</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">FGSM / PGD / CW</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">OpenCV</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Scikit-learn</span>
+            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">7 Attacks · 3,500 Configs</span>
+          </div>
+        </div>
+        <div style="margin-top:.75rem;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.1);display:flex;gap:.55rem;flex-wrap:wrap;">
+          <a href="https://arxiv.org/abs/2604.16532" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.38rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.22);padding:.32rem .9rem;border-radius:8px;text-decoration:none;background:rgba(255,255,255,.08);">
+            <i class="fa-solid fa-file-lines"></i> arXiv ↗
+          </a>
+          <a href="https://osf.io/4grsd/overview?view_only=c6246a2f9ea34a39a557da080c95ebed" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.38rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.22);padding:.32rem .9rem;border-radius:8px;text-decoration:none;background:rgba(255,255,255,.08);">
+            <i class="fa-solid fa-database"></i> OSF Preprint ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="publications" style="padding:4rem 0;position:relative;overflow:hidden;background:#fff8f8;">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label">Publications</span>
+      <h2 class="section-title">Research Output</h2>
+    </div>
+
+    
+    <div class="card reveal" style="padding:1.1rem 1.75rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;background:linear-gradient(135deg,#3730A3,#4338CA);overflow:hidden;position:relative;">
+      <div style="position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.06);top:-40px;right:80px;pointer-events:none;"></div>
+      <p style="font-size:.9rem;color:rgba(255,255,255,.85);margin:0;font-weight:500;">View full publication list on Google Scholar</p>
+      <a href="https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn--white" style="font-size:.82rem;padding:.45rem 1.2rem;">Open Scholar ↗</a>
+    </div>
+
+    
+    <div class="scholar-metrics reveal" style="margin-bottom:1.5rem;">
+      <div class="scholar-stat">
+        <p class="scholar-stat__num">1</p>
+        <p class="scholar-stat__label"><i class="fa-solid fa-book-open"></i> Published</p>
+      </div>
+      <div class="scholar-stat scholar-stat--review">
+        <p class="scholar-stat__num">1</p>
+        <p class="scholar-stat__label"><i class="fa-solid fa-hourglass-half"></i> Under Review</p>
+      </div>
+      <div class="scholar-stat">
+        <p class="scholar-stat__num">5</p>
+        <p class="scholar-stat__label"><i class="fa-solid fa-users"></i> Co-authors</p>
+      </div>
+      <a href="https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en" target="_blank" rel="noopener" class="scholar-stat scholar-stat--link">
+        <p class="scholar-stat__num"><i class="fa-brands fa-google" style="font-size:1.4rem;"></i></p>
+        <p class="scholar-stat__label">Scholar Profile</p>
+      </a>
+    </div>
+
+    
+    <div class="card pub-card reveal" style="background:linear-gradient(160deg,#fce7f3 0%,#fff5f9 35%,#fff 100%);">
+      <div class="pub-card__year" style="background:linear-gradient(135deg,var(--accent),var(--accent-dark));">2026</div>
+      <div>
+        <h3 class="pub-card__title">Beyond Attack Success Rate: A Multi-Metric Evaluation of Adversarial Transferability in Medical Imaging Models</h3>
+        <p class="pub-card__authors">E. Curl, <strong>K. Ampomah</strong>, M. Erfan, S. Dibbo</p>
+        <p class="pub-card__venue">arXiv Preprints · Under Review, 2026</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.65rem;">
+          <span class="chip chip--garnet">Adversarial ML</span>
+          <span class="chip chip--indigo">Medical Imaging</span>
+          <span class="chip chip--indigo">Trustworthy AI</span>
+        </div>
+        <a href="https://arxiv.org/abs/2604.16532" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:.35rem;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.72rem;"></i>arXiv:2604.16532</a>
+      </div>
+    </div>
+
+    
+    <div class="card pub-card reveal" style="background:linear-gradient(160deg,#EEF2FF 0%,#f5f7ff 35%,#fff 100%);">
+      <div class="pub-card__year">2024</div>
+      <div>
+        <h3 class="pub-card__title">Design and Implementation of Coconut Maturity Prediction System Based on Naïve Bayes Classification Algorithm Using Arduino and a Sound Sensor</h3>
+        <p class="pub-card__authors"><strong>K. Ampomah</strong>, O. A. Antwi, A. F. Akwetey</p>
+        <p class="pub-card__venue">International Journal of Innovative Science and Research Technology (IJISRT), 9(1), 1246–1255, 2024</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem;">
+          <span class="chip chip--indigo">Machine Learning</span>
+          <span class="chip chip--indigo">Naïve Bayes</span>
+          <span class="chip chip--indigo">IoT / Arduino</span>
+          <span class="chip chip--garnet">Precision Agriculture</span>
+        </div>
+        <a href="https://doi.org/10.5281/zenodo.10608503" target="_blank" rel="noopener" style="font-size:.78rem;font-weight:600;color:var(--primary);display:inline-flex;align-items:center;gap:.3rem;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.72rem;"></i>doi:10.5281/zenodo.10608503</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="countries" style="padding:4rem 0;position:relative;overflow:hidden;background:#f2f0ff;">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label"><i class="fa-solid fa-earth-africa icon-pulse" style="margin-right:.4rem;"></i>Travel</span>
+      <h2 class="section-title">Countries Visited</h2>
+      <p class="section-sub">Home: Ghana &nbsp;·&nbsp; Current: USA (Alabama) &nbsp;·&nbsp; Transit: Rwanda, Qatar</p>
+    </div>
+
+    
+    <div class="travel-header">
+      <div class="travel-path"></div>
+      <div class="travel-plane">✈️</div>
+    </div>
+
+    <div class="country-grid">
+      <div class="card country-card reveal reveal-delay-1" style="background:linear-gradient(160deg,#fce8ea,#fff0f1);overflow:hidden;position:relative;">
+        <div style="position:absolute;width:80px;height:80px;border-radius:50%;background:rgba(158,27,50,.08);bottom:-20px;right:-20px;pointer-events:none;"></div>
+        <img src="https://flagcdn.com/w80/gh.png" srcset="https://flagcdn.com/w160/gh.png 2x" alt="Ghana flag" class="country-card__flag-img">
+        <p class="country-card__name">Ghana</p>
+        <p class="country-card__tag">West Africa · Accra</p>
+        <span class="country-card__badge" style="background:#9e1b32;color:#fff;">Home Country</span>
+      </div>
+      <div class="card country-card reveal reveal-delay-2" style="background:linear-gradient(160deg,#EEF2FF,#e8edff);overflow:hidden;position:relative;">
+        <div style="position:absolute;width:80px;height:80px;border-radius:50%;background:rgba(67,56,202,.08);bottom:-20px;right:-20px;pointer-events:none;"></div>
+        <img src="https://flagcdn.com/w80/us.png" srcset="https://flagcdn.com/w160/us.png 2x" alt="USA flag" class="country-card__flag-img">
+        <p class="country-card__name">United States</p>
+        <p class="country-card__tag">Tuscaloosa · Atlanta</p>
+        <span class="country-card__badge" style="background:#4338CA;color:#fff;">Current</span>
+      </div>
+      <div class="card country-card reveal reveal-delay-3" style="background:linear-gradient(160deg,#f1f5f9,#e8eff6);overflow:hidden;position:relative;">
+        <div style="position:absolute;width:80px;height:80px;border-radius:50%;background:rgba(71,85,105,.06);bottom:-20px;right:-20px;pointer-events:none;"></div>
+        <img src="https://flagcdn.com/w80/rw.png" srcset="https://flagcdn.com/w160/rw.png 2x" alt="Rwanda flag" class="country-card__flag-img">
+        <p class="country-card__name">Rwanda</p>
+        <p class="country-card__tag">East Africa</p>
+        <span class="country-card__badge" style="background:#475569;color:#fff;">Transit</span>
+      </div>
+      <div class="card country-card reveal reveal-delay-4" style="background:linear-gradient(160deg,#f1f5f9,#e8eff6);overflow:hidden;position:relative;">
+        <div style="position:absolute;width:80px;height:80px;border-radius:50%;background:rgba(71,85,105,.06);bottom:-20px;right:-20px;pointer-events:none;"></div>
+        <img src="https://flagcdn.com/w80/qa.png" srcset="https://flagcdn.com/w160/qa.png 2x" alt="Qatar flag" class="country-card__flag-img">
+        <p class="country-card__name">Qatar</p>
+        <p class="country-card__tag">Middle East</p>
+        <span class="country-card__badge" style="background:#475569;color:#fff;">Transit</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="certifications" style="padding:4rem 0;position:relative;overflow:hidden;background:#eef2ff;">
+  <div class="section-blob section-blob--indigo" style="width:350px;height:350px;top:-100px;right:-100px;"></div>
+  <div class="section-blob section-blob--garnet" style="width:250px;height:250px;bottom:-80px;left:-60px;"></div>
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head reveal">
+      <span class="section-label"><i class="fa-solid fa-certificate icon-bounce" style="margin-right:.4rem;"></i>Certifications</span>
+      <h2 class="section-title">Professional Certificates</h2>
+      <p class="section-sub">16+ verified Credly badges — IBM Data Science, IBM ML, Google IT Support, Google Project Management, and more.</p>
+    </div>
+
+    
+    <div class="card reveal" style="padding:1.1rem 1.75rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;background:linear-gradient(135deg,#1e1b4b,#4338CA);overflow:hidden;position:relative;">
+      <div style="position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.06);top:-40px;right:80px;pointer-events:none;"></div>
+      <p style="font-size:.9rem;color:rgba(255,255,255,.85);margin:0;font-weight:500;"><i class="fa-solid fa-certificate" style="margin-right:.5rem;"></i>View verified digital badges on Credly</p>
+      <a href="https://www.credly.com/users/ampomahkofi" target="_blank" rel="noopener" class="btn btn--white" style="font-size:.82rem;padding:.45rem 1.2rem;">Open Credly ↗</a>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:1rem;">
+
+      
+      <div class="card reveal reveal-delay-1" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#1e1b4b 0%,#312e81 40%,#4338CA 100%);padding:1.5rem 1.75rem;">
+        <div style="position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.06);top:-35px;right:-35px;pointer-events:none;"></div>
+        <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.25rem;position:relative;">
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fa-solid fa-microchip" style="color:#fff;font-size:.95rem;"></i>
+          </div>
+          <div>
+            <p style="font-size:.97rem;font-weight:700;color:#fff;line-height:1.2;">IBM</p>
+            <p style="font-size:.75rem;color:rgba(255,255,255,.65);">13 Certificates · Coursera</p>
+          </div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:.45rem;position:relative;">
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>IBM Data Science Professional Certificate</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Data Scientist Career Guide and Interview Preparation</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Generative AI: Elevate Your Data Science Career</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Applied Data Science Capstone</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Machine Learning with Python</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Data Visualization with Python</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Data Analysis with Python</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Databases and SQL for Data Science with Python</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Python Project for Data Science</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Python for Data Science, AI &amp;amp; Development</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Data Science Methodology</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Tools for Data Science</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>What is Data Science?</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="card reveal reveal-delay-2" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#3b0010 0%,#5c0e1e 38%,#7a1325 70%,#9e1b32 100%);padding:1.5rem 1.75rem;">
+        <div style="position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.06);top:-35px;right:-35px;pointer-events:none;"></div>
+        <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.25rem;position:relative;">
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fa-brands fa-google" style="color:#fff;font-size:.95rem;"></i>
+          </div>
+          <div>
+            <p style="font-size:.97rem;font-weight:700;color:#fff;line-height:1.2;">Google</p>
+            <p style="font-size:.75rem;color:rgba(255,255,255,.65);">15 Certificates · Coursera</p>
+          </div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:.45rem;position:relative;">
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Google Project Management Professional Certificate</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Capstone: Applying Project Management in the Real World</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Agile Project Management</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Project Execution: Running the Project</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Project Planning: Putting It All Together</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Google IT Support Professional Certificate</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>IT Security: Defense against the Digital Dark Arts</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>System Administration and IT Infrastructure Services</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Operating Systems and You: Becoming a Power User</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>The Bits and Bytes of Computer Networking</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Project Initiation: Starting a Successful Project</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Foundations of Project Management</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Foundations of Cybersecurity</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Technical Support Fundamentals</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Google Analytics</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- Meta and miscellaneous certs omitted for focus — view all on Credly -->
+      <div class="card reveal reveal-delay-1" style="overflow:hidden;position:relative;display:none;background:linear-gradient(145deg,#312e81 0%,#3730A3 45%,#4338CA 100%);padding:1.5rem 1.75rem;">
+        <div style="position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.06);top:-35px;right:-35px;pointer-events:none;"></div>
+        <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.25rem;position:relative;">
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fa-brands fa-meta" style="color:#fff;font-size:.95rem;"></i>
+          </div>
+          <div>
+            <p style="font-size:.97rem;font-weight:700;color:#fff;line-height:1.2;">Meta</p>
+            <p style="font-size:.75rem;color:rgba(255,255,255,.65);">5 Certificates · Coursera</p>
+          </div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:.45rem;position:relative;">
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Introduction to Social Media Marketing</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Social Media Management</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Advertising with Meta</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Fundamentals of Social Media Advertising</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Measure and Optimize Social Media Marketing Campaigns</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="card reveal reveal-delay-2" style="overflow:hidden;position:relative;display:none;background:linear-gradient(145deg,#5c0e1e 0%,#7a1325 45%,#9e1b32 100%);padding:1.5rem 1.75rem;">
+        <div style="position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.06);top:-35px;right:-35px;pointer-events:none;"></div>
+        <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.25rem;position:relative;">
+          <div style="width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fa-solid fa-award" style="color:#fff;font-size:.95rem;"></i>
+          </div>
+          <div>
+            <p style="font-size:.97rem;font-weight:700;color:#fff;line-height:1.2;">Others</p>
+            <p style="font-size:.75rem;color:rgba(255,255,255,.65);">12 Certificates · Various Providers</p>
+          </div>
+        </div>
+        <ul style="display:flex;flex-direction:column;gap:.45rem;position:relative;">
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Coursera: Data Science Orientation</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>CVS Health: Introduction to Customer Service</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Macquarie University: Excel Fundamentals for Data Analysis</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Duke University: Data Science Math Skills</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>4EU&#43; Alliance: Data Literacy</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>J.P. Morgan: Software Engineering Job Simulation (Forage)</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Birdify: Learning Data Visualization</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Birdify: Excel Statistics Essential Training</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Birdify: Data Fluency – Exploring and Describing Data</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>Birdify: Learning Data Analytics</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>FestMan Learning: Microsoft Excel Fundamentals</span>
+          </li>
+          
+          <li style="display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.45;">
+            <i class="fa-solid fa-circle-check" style="color:rgba(255,255,255,.6);font-size:.68rem;margin-top:.28rem;flex-shrink:0;"></i>
+            <span>World Education Services: Verified International Academic Qualifications</span>
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" aria-label="Contact" style="padding:4rem 0;position:relative;overflow:hidden;background:#f0f3ff;">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="section-head">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-sub">Open to research collaborations, speaking invitations, and academic correspondence.</p>
+    </div>
+    <div class="contact-grid">
+
+      <a href="mailto:kampomah@crimson.ua.edu" style="border:none;display:block;">
+        <div class="card contact-card reveal reveal-delay-1" style="background:linear-gradient(145deg,#9e1b32,#7a1325);overflow:hidden;position:relative;">
+          <div style="position:absolute;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.07);top:-28px;right:-28px;pointer-events:none;"></div>
+          <div class="contact-card__icon-wrap" style="background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:1.3rem;"><i class="fa-solid fa-envelope"></i></div>
+          <p class="contact-card__service" style="color:rgba(255,255,255,.65);">Email</p>
+          <p class="contact-card__value" style="color:#fff;font-weight:500;font-size:.7rem;">kampomah@crimson.ua.edu</p>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/kofi-ampomah-306771189/" target="_blank" rel="noopener" style="border:none;display:block;">
+        <div class="card contact-card reveal reveal-delay-2" style="background:linear-gradient(145deg,#4338CA,#3730A3);overflow:hidden;position:relative;">
+          <div style="position:absolute;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.07);top:-28px;right:-28px;pointer-events:none;"></div>
+          <div class="contact-card__icon-wrap" style="background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:1.3rem;"><i class="fa-brands fa-linkedin-in"></i></div>
+          <p class="contact-card__service" style="color:rgba(255,255,255,.65);">LinkedIn</p>
+          <p class="contact-card__value" style="color:#fff;font-weight:500;">Kofi Ampomah</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Ampomah-Kofi" target="_blank" rel="noopener" style="border:none;display:block;">
+        <div class="card contact-card reveal reveal-delay-3" style="background:linear-gradient(145deg,#7a1325,#9e1b32);overflow:hidden;position:relative;">
+          <div style="position:absolute;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.07);top:-28px;right:-28px;pointer-events:none;"></div>
+          <div class="contact-card__icon-wrap" style="background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:1.3rem;"><i class="fa-brands fa-github"></i></div>
+          <p class="contact-card__service" style="color:rgba(255,255,255,.65);">GitHub</p>
+          <p class="contact-card__value" style="color:#fff;font-weight:500;">@Ampomah-Kofi</p>
+        </div>
+      </a>
+
+      <a href="https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en" target="_blank" rel="noopener" style="border:none;display:block;">
+        <div class="card contact-card reveal reveal-delay-4" style="background:linear-gradient(145deg,#312e81,#4338CA);overflow:hidden;position:relative;">
+          <div style="position:absolute;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.07);top:-28px;right:-28px;pointer-events:none;"></div>
+          <div class="contact-card__icon-wrap" style="background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:1.3rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+          <p class="contact-card__service" style="color:rgba(255,255,255,.65);">Google Scholar</p>
+          <p class="contact-card__value" style="color:#fff;font-weight:500;">Kofi Ampomah</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Section dot navigator (auto-populated by JS) -->
+<nav class="section-nav" id="sectionNav" aria-label="Page sections"></nav>
+
+<!-- CV Preview Modal -->
+<div class="cv-modal" id="cvModal" role="dialog" aria-modal="true" aria-label="CV Preview">
+  <div class="cv-modal__bd" id="cvModalBd"></div>
+  <div class="cv-modal__box">
+    <div class="cv-modal__head">
+      <p class="cv-modal__title" id="cvModalTitle">CV Preview</p>
+      <button class="cv-modal__close" id="cvModalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <iframe class="cv-modal__frame" id="cvModalFrame" src="" title="CV Preview"></iframe>
+    <div class="cv-modal__foot">
+      <span class="cv-modal__note">If preview doesn't load, use the download button →</span>
+      <a class="cv-modal__dl" id="cvModalDl" href="#" download><i class="fa-solid fa-download"></i> Download PDF</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  /* ── Dark mode ── */
+  var dmBtn = document.getElementById('dmBtn');
+  var html  = document.documentElement;
+  function setDark(on) {
+    html.classList.toggle('dark', on);
+    try { localStorage.setItem('dm', on ? '1' : '0'); } catch(e) {}
+    if (dmBtn) dmBtn.innerHTML = on
+      ? '<i class="fa-solid fa-sun"></i> Light'
+      : '<i class="fa-solid fa-moon"></i> Dark';
+  }
+  try { if (localStorage.getItem('dm') === '1') setDark(true); } catch(e) {}
+  if (dmBtn) dmBtn.addEventListener('click', function () { setDark(!html.classList.contains('dark')); });
+
+  /* ── Typing animation ── */
+  var typeEl = document.getElementById('heroType');
+  if (typeEl) {
+    var phrases = [
+      'Adversarial ML Researcher',
+      'Usable Security & Privacy',
+      'AI Security Researcher',
+      'Human-Centered Computing',
+      'Trustworthy AI Builder',
+      'PhD · UA-SPECTRAL Lab'
+    ];
+    var pi = 0, ci = 0, del = false, wait = 0;
+    function typeStep() {
+      if (wait > 0) { wait--; setTimeout(typeStep, 80); return; }
+      var p = phrases[pi];
+      if (!del) {
+        typeEl.textContent = p.slice(0, ++ci);
+        if (ci >= p.length) { del = true; wait = 22; }
+        setTimeout(typeStep, 65);
+      } else {
+        typeEl.textContent = p.slice(0, --ci);
+        if (ci <= 0) { del = false; pi = (pi + 1) % phrases.length; wait = 4; }
+        setTimeout(typeStep, 30);
+      }
+    }
+    typeStep();
+  }
+
+  /* ── Reveal on scroll ── */
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+
+  /* ── Nav hamburger ── */
+  var toggle = document.getElementById('navToggle');
+  var links  = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+
+  /* ── Hire popup — slides in after 1.8 s ── */
+  var hirePopup = document.getElementById('hirePopup');
+  var hireClose = document.getElementById('hirePopupClose');
+  function dismissHirePopup() {
+    if (!hirePopup) return;
+    hirePopup.style.transform = 'translateY(140%)';
+    hirePopup.style.opacity   = '0';
+    setTimeout(function () { hirePopup.style.display = 'none'; }, 520);
+  }
+  if (hirePopup) setTimeout(function () { hirePopup.classList.add('visible'); }, 1800);
+  if (hireClose) hireClose.addEventListener('click', dismissHirePopup);
+  if (hirePopup) {
+    var hireCta = hirePopup.querySelector('.hire-popup__cta');
+    if (hireCta) hireCta.addEventListener('click', dismissHirePopup);
+  }
+
+  /* ── CV Preview Modal ── */
+  var cvModal      = document.getElementById('cvModal');
+  var cvModalBd    = document.getElementById('cvModalBd');
+  var cvModalClose = document.getElementById('cvModalClose');
+  var cvModalFrame = document.getElementById('cvModalFrame');
+  var cvModalTitle = document.getElementById('cvModalTitle');
+  var cvModalDl    = document.getElementById('cvModalDl');
+  function openCvModal(src, title) {
+    if (!cvModal) return;
+    if (cvModalTitle) cvModalTitle.textContent = title || 'CV Preview';
+    if (cvModalFrame) cvModalFrame.src = src;
+    if (cvModalDl)  { cvModalDl.href = src; cvModalDl.download = (title || 'cv').replace(/\s+/g,'-').toLowerCase() + '.pdf'; }
+    cvModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCvModal() {
+    if (!cvModal) return;
+    cvModal.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(function () { if (cvModalFrame) cvModalFrame.src = ''; }, 350);
+  }
+  if (cvModalBd)    cvModalBd.addEventListener('click', closeCvModal);
+  if (cvModalClose) cvModalClose.addEventListener('click', closeCvModal);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeCvModal(); });
+  document.querySelectorAll('[data-cv]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      openCvModal(btn.dataset.src || btn.getAttribute('href') || '', btn.dataset.cv);
+    });
+  });
+
+  /* ── Generic show-more helper ── */
+  function makeShowMore(items, limit, insertAfterEl, dark) {
+    if (items.length <= limit) return;
+    items.slice(limit).forEach(function (el) {
+      el._smSaved = el.style.display;
+      el.style.display = 'none';
+    });
+    var remaining = items.length - limit;
+    var btn = document.createElement('button');
+    btn.className = 'show-more-btn' + (dark ? ' show-more-btn--dark' : '');
+    btn.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more';
+    var expanded = false;
+    btn.addEventListener('click', function () {
+      expanded = !expanded;
+      items.slice(limit).forEach(function (el) {
+        el.style.display = expanded ? (el._smSaved || '') : 'none';
+      });
+      btn.classList.toggle('expanded', expanded);
+      btn.innerHTML = expanded
+        ? '<i class="fa-solid fa-chevron-up"></i> Show fewer'
+        : '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more';
+    });
+    insertAfterEl.parentNode.insertBefore(btn, insertAfterEl.nextSibling);
+  }
+
+  /* ── News show-more ── */
+  var newsList = document.querySelector('#news .news-list');
+  if (newsList) makeShowMore(Array.prototype.slice.call(newsList.querySelectorAll('.news-item')), 3, newsList, false);
+
+  /* ── Awards show-more ── */
+  document.querySelectorAll('#awards .awards-grid').forEach(function (grid) {
+    makeShowMore(Array.prototype.slice.call(grid.querySelectorAll('.award-card')), 3, grid, false);
+  });
+
+  /* ── Experience show-more ── */
+  var expContainer = document.querySelector('#experience .card > div');
+  if (expContainer) makeShowMore(Array.prototype.slice.call(expContainer.children), 3, expContainer, false);
+
+  /* ── Certifications show-more ── */
+  var certSection = document.getElementById('certifications');
+  if (certSection) {
+    certSection.querySelectorAll('ul').forEach(function (ul) {
+      var items = Array.prototype.slice.call(ul.querySelectorAll('li'));
+      var LIMIT = 6;
+      if (items.length <= LIMIT) return;
+      items.slice(LIMIT).forEach(function (li) { li.style.display = 'none'; });
+      var remaining = items.length - LIMIT;
+      var btn = document.createElement('button');
+      btn.className = 'show-more-btn show-more-btn--dark';
+      btn.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more certificates';
+      var expanded = false;
+      btn.addEventListener('click', function () {
+        expanded = !expanded;
+        items.slice(LIMIT).forEach(function (li) { li.style.display = expanded ? 'flex' : 'none'; });
+        btn.classList.toggle('expanded', expanded);
+        btn.innerHTML = expanded
+          ? '<i class="fa-solid fa-chevron-up"></i> Show fewer'
+          : '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more certificates';
+      });
+      ul.parentNode.insertBefore(btn, ul.nextSibling);
+    });
+  }
+
+  /* ── Section dot navigator (auto-built from all section[id] elements) ── */
+  var snavEl   = document.getElementById('sectionNav');
+  var snBtns   = [];
+  var snLabels = {
+    home:'Home', about:'About', news:'News', awards:'Awards',
+    experience:'Experience', teaching:'Teaching', skills:'Skills',
+    research:'Research', publications:'Publications', talks:'Talks',
+    countries:'Countries', certifications:'Certs', resources:'Resources',
+    contact:'Contact'
+  };
+  if (snavEl) {
+    Array.prototype.slice.call(document.querySelectorAll('section[id]')).forEach(function (sec) {
+      var btn   = document.createElement('button');
+      btn.className    = 'sn-item';
+      btn.dataset.secId = sec.id;
+      btn.setAttribute('aria-label', 'Go to ' + (snLabels[sec.id] || sec.id));
+      var label = document.createElement('span');
+      label.className  = 'sn-label';
+      label.textContent = snLabels[sec.id] || sec.id.charAt(0).toUpperCase() + sec.id.slice(1);
+      var dot   = document.createElement('span');
+      dot.className = 'sn-dot';
+      btn.appendChild(label);
+      btn.appendChild(dot);
+      snavEl.appendChild(btn);
+      snBtns.push(btn);
+      btn.addEventListener('click', function () {
+        sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
+
+  /* ── Scroll: progress bar + back-to-top + scrollspy + section-nav ── */
+  var progBar  = document.getElementById('scrollProgress');
+  var bttBtn   = document.getElementById('backToTop');
+  var spyLinks = Array.prototype.slice.call(document.querySelectorAll('.nav__link[href^="#"]'));
+  var spySecs  = spyLinks.map(function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  }).filter(Boolean);
+
+  function onScroll() {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    var dh = document.documentElement.scrollHeight - window.innerHeight;
+    if (progBar) progBar.style.width = (dh > 0 ? (st / dh) * 100 : 0) + '%';
+    if (bttBtn)  bttBtn.classList.toggle('visible', st > 320);
+    var activeSec = null;
+    if (spySecs.length) {
+      activeSec = spySecs[0];
+      spySecs.forEach(function (sec) { if (sec.offsetTop - 90 <= st) activeSec = sec; });
+      spyLinks.forEach(function (a) {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + activeSec.id);
+      });
+    }
+    if (snBtns.length && activeSec) {
+      snBtns.forEach(function (btn) {
+        btn.classList.toggle('active', btn.dataset.secId === activeSec.id);
+      });
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  if (bttBtn) bttBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  /* ── Animated count-up for About stats ── */
+  var countObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el     = e.target;
+      var target = parseInt(el.dataset.target, 10);
+      var suffix = el.dataset.suffix || '';
+      var dur = 1200, start = null;
+      function step(ts) {
+        if (!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      countObs.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('.stat-num').forEach(function (el) { countObs.observe(el); });
+
+  /* ── Smooth nav scroll ── */
+  document.querySelectorAll('.nav__link[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (links)  { links.classList.remove('open'); }
+      if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded', false); }
+      var t = document.querySelector(this.getAttribute('href'));
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+})();
+</script>
+
+
+  <footer role="contentinfo">
+    <div class="footer__inner">
+      <span>&copy; 2026 Kofi Ampomah &nbsp;·&nbsp; <span style="font-size:.72em;opacity:.55;">Updated Apr 2026</span></span>
+      <div class="footer__links">
+        <a href="mailto:kampomah@crimson.ua.edu">Email</a>
+        <a href="https://github.com/Ampomah-Kofi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/kofi-ampomah-306771189/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

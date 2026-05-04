@@ -1,0 +1,46 @@
+baseURL = 'https://kampomah.github.io/my_personalphd_website/'
+languageCode = 'en-us'
+title = 'Kofi Ampomah'
+theme = 'ananke'
+publishDir = 'docs'
+
+[params]
+  description = "PhD Student in Computer Science · UA-SPECTRAL Lab · University of Alabama"
+  text_color = ""
+  background_color_class = "bg-near-black"
+  featured_image = ""
+  recent_posts_number = 3
+
+[params.ananke.social.follow]
+  networks = ["github", "linkedin"]
+
+[params.ananke.social.networks.github]
+  profile = "kampomah"
+
+[params.ananke.social.networks.linkedin]
+  profile = "kofi-ampomah-306771189"
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menus.main]]
+  name = "Research"
+  url = "/projects/"
+  weight = 2
+
+[[menus.main]]
+  name = "Publications"
+  url = "/publications/"
+  weight = 3
+
+[[menus.main]]
+  name = "Countries"
+  url = "/countries/"
+  weight = 4
+
+[[menus.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 5

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kofi Ampomah — Resume</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    color: #000;
+    background: #fff;
+    max-width: 755px;
+    margin: 0 auto;
+    padding: 1cm 1.3cm;
+    line-height: 1.38;
+  }
+
+  .name {
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    letter-spacing: .3px;
+    margin-bottom: .22rem;
+  }
+  .contact {
+    text-align: center;
+    font-size: 10pt;
+    margin-bottom: .75rem;
+  }
+  .contact a { color: #000; text-decoration: underline; }
+
+  h2 {
+    font-size: 11pt;
+    font-weight: bold;
+    font-variant: small-caps;
+    border-bottom: 1px solid #000;
+    padding-bottom: .08rem;
+    margin-top: .6rem;
+    margin-bottom: .32rem;
+    letter-spacing: .2px;
+  }
+
+  .entry { margin-bottom: .38rem; }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .5rem;
+  }
+  .bold   { font-weight: bold; }
+  .italic { font-style: italic; }
+
+  ul { padding-left: 1.25rem; margin-top: .14rem; }
+  li { margin-bottom: .1rem; list-style-type: disc; }
+
+  .skills-block { margin-bottom: .08rem; }
+
+  .print-btn {
+    position: fixed; top: 1rem; right: 1rem;
+    background: #000; color: #fff;
+    border: none; padding: .38rem .95rem; border-radius: 4px;
+    font-size: .8rem; font-weight: bold; cursor: pointer;
+    font-family: sans-serif;
+  }
+
+  @media print {
+    .print-btn { display: none; }
+    body { padding: .85cm 1.1cm; }
+  }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Save as PDF</button>
+
+<p class="name">KOFI AMPOMAH</p>
+<p class="contact">
+  <a href="https://linkedin.com/in/kofi-ampomah">linkedin.com/in/kofi-ampomah</a> |
+  <a href="https://github.com/Ampomah-Kofi">github.com/Ampomah-Kofi</a> |
+  kampomah@crimson.ua.edu
+</p>
+
+<h2>Education</h2>
+
+<div class="entry">
+  <div class="row">
+    <span class="bold">The University of Alabama, Tuscaloosa, AL, USA</span>
+    <span>Expected Dec 2030</span>
+  </div>
+  <div>Doctor of Philosophy in Computer Science</div>
+  <div class="italic">Focus Area: Usable Security and Privacy, Human-Centered Computing, AI Security, Adversarial ML &nbsp;·&nbsp; Advisor: Dr. Tu Le</div>
+</div>
+
+<div class="entry">
+  <div class="row">
+    <span class="bold">University of Ghana, Legon, Ghana</span>
+    <span>August 2024</span>
+  </div>
+  <div>Master of Science in Computer Science</div>
+  <div class="italic">Honor: Overall Best ML with Big Data Analytics Student</div>
+</div>
+
+<div class="entry">
+  <div class="row">
+    <span class="bold">Ghana Communication Technology University, Accra, Ghana</span>
+    <span>July 2022</span>
+  </div>
+  <div>Bachelor of Science in Computer Engineering</div>
+  <div class="italic">Honors: First Class Honours, Innovative Thesis Award, Second Best Engineering Graduate</div>
+</div>
+
+<h2>Relevant Experience</h2>
+
+<div class="entry">
+  <div class="row">
+    <span class="bold">Graduate Research and Teaching Assistant</span>
+    <span>August 2025 – Present</span>
+  </div>
+  <div class="italic">UA-SPECTRAL Lab, The University of Alabama, Tuscaloosa, AL</div>
+  <ul>
+    <li>Designed BotLens, a privacy auditing framework analyzing 183,142 reviews across 23,000 Discord bots.</li>
+    <li>Trained DeBERTa-v3-large on a 33-concept security and privacy taxonomy, reaching F1 of 0.94 with 30% labeling.</li>
+    <li>Built end-to-end Python pipeline integrating Playwright scraping, Ollama llama3:8b distillation, and RTX 5090 inference.</li>
+    <li>Co-authored adversarial transferability study across 7 attacks, CNN and ViT models, and 3,500 configurations.</li>
+    <li>Led CS 438/538 Computer Networks labs under Prof. Yang Xiao (IEEE Fellow): TCP/IP, DNS, HTTP, Wireshark.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row">
+    <span class="bold">Large Language Model (LLM) Researcher</span>
+    <span>January 2024 – May 2024</span>
+  </div>
+  <div class="italic">Datamaker GH, Accra, Ghana</div>
+  <ul>
+    <li>Annotated and curated large-scale text datasets for LLM training and evaluation under structured NLP labeling protocols.</li>
+    <li>Performed data cleaning, validation, and quality checks across multilingual corpora to reduce noise and labeling errors.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row">
+    <span class="bold">Teaching Assistant and Data Analyst</span>
+    <span>January 2022 – September 2023</span>
+  </div>
+  <div class="italic">Department of Computer Engineering, GCTU, Accra, Ghana</div>
+  <ul>
+    <li>Supported instruction for ENCE 324 Computer Security and Disaster Recovery and ENCE 312 Software Engineering.</li>
+    <li>Tuned production academic database queries and indexes, reducing system downtime by 25%.</li>
+    <li>Built Excel analytical dashboards using PivotTables, VLOOKUP, and advanced charts to track student performance metrics.</li>
+  </ul>
+</div>
+
+<h2>Additional Experience</h2>
+
+<div class="entry">
+  <div class="row">
+    <span class="bold">Programming Instructor and Frontend Developer</span>
+    <span>June 2018 – September 2020</span>
+  </div>
+  <div class="italic">Codetrain, Accra Digital Center, Accra, Ghana</div>
+  <ul>
+    <li>Taught beginner software development, Scrum, and Agile methodology, increasing student project completion capacity by 79%.</li>
+    <li>Built responsive web apps with HTML, CSS, SASS, JavaScript, and Bootstrap; mentored 40+ early-career developers.</li>
+  </ul>
+</div>
+
+<h2>Publications</h2>
+
+<ul>
+  <li>Curl, E., <span class="bold">Ampomah, K.</span>, Erfan, M., Dibbo, S. Beyond Attack Success Rate: A Multi-Metric Evaluation of Adversarial Transferability in Medical Imaging Models. <span class="italic">arXiv:2604.16532</span>, Under Review, 2026.</li>
+  <li><span class="bold">Ampomah, K.</span>, Antwi, O. A., Akwetey, A. F. Design and Implementation of Coconut Maturity Prediction System Based on Naïve Bayes Classification Algorithm Using Arduino and a Sound Sensor. <span class="italic">IJISRT</span>, Vol. 9(1), pp. 1246–1255, 2024.</li>
+</ul>
+
+<h2>Honors &amp; Activities</h2>
+
+<div><span class="italic">Honors:</span> Upsilon Pi Epsilon (UPE) Computer Science Honor Society; Innovative Thesis Award (GCTU); Newmont Gold Corp Development Foundation Scholarship; Government of Ghana Scholarship; Volunteer for UA CS K-12 Robotics Contest organized by Prof. Jeff Gray</div>
+<div style="margin-top:.18rem;"><span class="italic">Certifications:</span> 16+ verified badges — IBM Data Science, Google IT Support, Google Project Management, IBM Machine Learning &nbsp;(<a href="https://www.credly.com/users/ampomahkofi">view on Credly</a>)</div>
+
+<h2>Technical Skills</h2>
+
+<div class="skills-block"><span class="italic">Languages:</span> Python, JavaScript, SQL, LaTeX, HTML/CSS, MATLAB</div>
+<div class="skills-block"><span class="italic">ML/AI &amp; Security:</span> PyTorch, TensorFlow, Scikit-learn, Hugging Face, Pandas, OpenCV, DeBERTa/Transformers, CNN/ViT, Adversarial ML, Threat Modeling</div>
+<div class="skills-block"><span class="italic">LLMs, Agents &amp; Tools:</span> LangChain, LangGraph, AutoGen, MCP, Claude API, Ollama, RAG, Playwright, Git, Docker</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="page-wrap">
+  <div class="section-label">About Me</div>
+
+  <div class="about-grid">
+    <!-- Left: info cards -->
+    <div>
+      <div class="card info-card">
+        <p class="info-card__label">Status</p>
+        <p class="info-card__value">PhD Student</p>
+      </div>
+      <div class="card info-card">
+        <p class="info-card__label">Lab</p>
+        <p class="info-card__value">UA-SPECTRAL Lab</p>
+      </div>
+      <div class="card info-card">
+        <p class="info-card__label">Institution</p>
+        <p class="info-card__value">University of Alabama<br><span style="font-weight:400;color:#5f6368;">Tuscaloosa, USA</span></p>
+      </div>
+      <div class="card info-card">
+        <p class="info-card__label">Field</p>
+        <p class="info-card__value">Computer Science</p>
+      </div>
+      <div class="card info-card">
+        <p class="info-card__label">Origin</p>
+        <p class="info-card__value">Ghana 🇬🇭</p>
+      </div>
+      <div style="margin-top:1rem;">
+        <a href="/contact/" class="btn btn--filled" style="width:100%;justify-content:center;">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Right: bio + interests -->
+    <div>
+      <div class="card" style="padding:1.75rem 2rem; margin-bottom:1rem;">
+        <h2 style="font-family:'Roboto Slab',serif; font-size:1.3rem; font-weight:600; color:#9e1b32; margin-bottom:.85rem;">Background</h2>
+        <p style="font-size:.9375rem;line-height:1.8;color:#5f6368;">
+          I am a PhD student in Computer Science at the University of Alabama, Tuscaloosa, originally from Ghana. I am a member of the <strong style="color:#202124;">UA-SPECTRAL Lab</strong>, where my work focuses on understanding and improving the trustworthiness of AI systems — both technically and from a human perspective.
+        </p>
+      </div>
+
+      <div class="card" style="padding:1.75rem 2rem; margin-bottom:1rem;">
+        <h2 style="font-family:'Roboto Slab',serif; font-size:1.3rem; font-weight:600; color:#9e1b32; margin-bottom:1rem;">Research Interests</h2>
+        <div style="display:flex;flex-direction:column;gap:.6rem;">
+          {{ range slice
+            (dict "icon" "🛡️" "title" "Trustworthy AI & Data Security"    "desc" "Building AI systems that are reliable, fair, and safe for real-world deployment.")
+            (dict "icon" "🔍" "title" "Human-Centered Security & Privacy" "desc" "Understanding how people interact with and are affected by security and privacy systems.")
+            (dict "icon" "⚔️" "title" "Adversarial Machine Learning"      "desc" "Studying how ML models can be attacked and hardened against adversarial inputs.")
+            (dict "icon" "💬" "title" "Natural Language Processing"        "desc" "Applying NLP techniques to security, privacy, and social computing problems.")
+            (dict "icon" "🤖" "title" "Third-Party Bot Ecosystems"        "desc" "Investigating privacy risks in community bots on social platforms.") }}
+          <div style="display:flex;gap:.85rem;align-items:flex-start;">
+            <span style="font-size:1.25rem;flex-shrink:0;margin-top:.1rem;">{{ .icon }}</span>
+            <div>
+              <p style="font-size:.9rem;font-weight:500;color:#202124;margin-bottom:.15rem;">{{ .title }}</p>
+              <p style="font-size:.84rem;color:#5f6368;line-height:1.6;margin:0;">{{ .desc }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="card" style="padding:1.75rem 2rem;">
+        <h2 style="font-family:'Roboto Slab',serif; font-size:1.3rem; font-weight:600; color:#9e1b32; margin-bottom:1rem;">Education</h2>
+        <div style="display:flex;gap:.85rem;align-items:flex-start;">
+          <div style="flex-shrink:0;width:3px;background:linear-gradient(to bottom,#9e1b32,#1a1a2e);border-radius:2px;align-self:stretch;"></div>
+          <div>
+            <p style="font-size:.9rem;font-weight:500;color:#202124;">PhD · Computer Science</p>
+            <p style="font-size:.84rem;color:#5f6368;">The University of Alabama, Tuscaloosa · In Progress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

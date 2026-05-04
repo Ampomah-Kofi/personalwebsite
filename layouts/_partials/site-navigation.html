@@ -1,0 +1,22 @@
+<nav role="navigation" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; padding:0 1.5rem; height:56px; background:rgba(0,0,0,0.18); backdrop-filter:blur(8px); border-bottom:1px solid rgba(255,255,255,0.1);">
+
+  <!-- Site title -->
+  <a href="{{ .Site.Home.RelPermalink }}" style="font-family:'Roboto Slab',serif; font-size:1.05rem; font-weight:600; color:#fff; text-decoration:none; letter-spacing:0.2px; white-space:nowrap; opacity:0.95;">
+    {{ .Site.Title }}
+  </a>
+
+  <!-- Nav links -->
+  {{ if .Site.Menus.main }}
+  <div style="display:flex; align-items:center; flex-wrap:wrap; gap:0.1rem;">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}"
+       style="font-family:'Roboto',sans-serif; font-size:0.78rem; font-weight:500; letter-spacing:0.6px; text-transform:uppercase; color:rgba(255,255,255,0.82); text-decoration:none; padding:0.5rem 0.85rem; border-radius:4px; transition:background 0.15s, color 0.15s;"
+       onmouseover="this.style.background='rgba(255,255,255,0.14)'; this.style.color='#fff'"
+       onmouseout="this.style.background='transparent'; this.style.color='rgba(255,255,255,0.82)'">
+      {{ .Name }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+</nav>

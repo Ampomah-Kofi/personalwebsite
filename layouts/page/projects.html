@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="page-wrap">
+  <div class="section-label">Research Projects</div>
+
+  <p style="font-size:.9375rem;color:#5f6368;line-height:1.8;margin-bottom:1.5rem;">
+    My research addresses critical challenges in AI trustworthiness, privacy, and security — with a focus on real-world social and medical systems.
+  </p>
+
+  <!-- BotLens -->
+  <div class="card project-card" style="margin-bottom:1rem;">
+    <div class="project-card__head">
+      <div class="project-card__icon">🤖</div>
+      <div>
+        <h2 class="project-card__title">BotLens</h2>
+        <p class="project-card__subtitle">Privacy Auditing for Third-Party Community Bots</p>
+      </div>
+    </div>
+    <div class="project-card__body">
+      <p class="project-card__desc">
+        BotLens is a privacy auditing framework that systematically analyzes how third-party community bots on social platforms (Discord, Reddit, Slack) collect, process, and expose user data. As bots become deeply integrated into online communities, users often have little visibility into what data these bots access. BotLens surfaces these hidden privacy risks and informs better platform governance.
+      </p>
+      <ul class="project-card__list">
+        <li>Automated auditing pipeline for bot data-collection behavior</li>
+        <li>Analysis of permission scopes and data-access patterns</li>
+        <li>Frameworks for communicating privacy risks to non-expert users</li>
+      </ul>
+      <div class="chips">
+        <span class="chip chip--red">Usable Privacy</span>
+        <span class="chip chip--navy">Bot Ecosystems</span>
+        <span class="chip chip--red">Security Auditing</span>
+        <span class="chip chip--navy">Social Platforms</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adversarial transferability -->
+  <div class="card project-card">
+    <div class="project-card__head">
+      <div class="project-card__icon">🧠</div>
+      <div>
+        <h2 class="project-card__title">Adversarial Transferability in Medical Imaging</h2>
+        <p class="project-card__subtitle">Beyond Attack Success Rate</p>
+      </div>
+    </div>
+    <div class="project-card__body">
+      <p class="project-card__desc">
+        This project investigates adversarial transferability — the capacity for adversarial examples crafted against one model to deceive a different model — within medical imaging AI. With AI increasingly used for diagnosis, understanding cross-model vulnerabilities is critical for patient safety and trustworthy deployment.
+      </p>
+      <ul class="project-card__list">
+        <li>Multi-metric evaluation framework beyond simple attack success rate</li>
+        <li>Analysis of transferability patterns across model architectures</li>
+        <li>Implications for robustness standards in medical AI systems</li>
+      </ul>
+      <div class="chips">
+        <span class="chip chip--red">Adversarial ML</span>
+        <span class="chip chip--navy">Medical AI</span>
+        <span class="chip chip--red">Trustworthy AI</span>
+        <span class="chip chip--navy">Robustness</span>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
