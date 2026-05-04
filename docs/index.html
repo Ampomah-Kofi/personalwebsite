@@ -175,7 +175,14 @@
     transition:color .15s,background .15s,border-color .15s;
     position:absolute;right:3.75rem;top:50%;transform:translateY(-50%)}
   .dm-btn:hover{color:#fff;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
-  @media(max-width:680px){.dm-btn{right:3.25rem;font-size:.68rem;padding:.25rem .42rem}}
+  @media(max-width:680px){.dm-btn{display:none}}
+  .dm-btn-mobile{display:none;width:100%;align-items:center;justify-content:center;gap:.5rem;
+    padding:.75rem 1.5rem;font-size:.85rem;font-weight:500;letter-spacing:.4px;
+    background:rgba(255,255,255,.06);border:none;border-top:1px solid rgba(255,255,255,.1);
+    color:rgba(255,255,255,.7);cursor:pointer;font-family:roboto,sans-serif;
+    transition:background .15s,color .15s;margin-top:.25rem}
+  .dm-btn-mobile:hover{background:rgba(255,255,255,.13);color:#fff}
+  @media(max-width:680px){.dm-btn-mobile{display:flex}}
 
   /* ── Dark mode overrides ── */
   html.dark body{background:#07050f!important;color:#c8c5e0}
@@ -414,7 +421,7 @@
 
 
 <nav class="nav" role="navigation" aria-label="Primary navigation">
-  <a href="#home" class="nav__brand" aria-label="Kofi Ampomah — go to top">KA</a>
+  <a href="#home" class="nav__brand" aria-label="Kofi Ampomah — go to top">Kofi Ampomah</a>
   <button class="dm-btn" id="dmBtn" title="Toggle dark mode" aria-label="Toggle dark mode">
     <i class="fa-solid fa-moon"></i> Dark
   </button>
@@ -432,6 +439,9 @@
     <a href="#countries"       class="nav__link">Countries</a>
     <a href="#certifications"  class="nav__link">Certifications</a>
     <a href="#contact"         class="nav__link">Contact</a>
+    <button class="dm-btn-mobile" id="dmBtnMobile" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i> Toggle Dark Mode
+    </button>
   </div>
 </nav>
 
@@ -1629,17 +1639,19 @@
 <script>
 (function () {
   /* ── Dark mode ── */
-  var dmBtn = document.getElementById('dmBtn');
-  var html  = document.documentElement;
+  var dmBtn       = document.getElementById('dmBtn');
+  var dmBtnMobile = document.getElementById('dmBtnMobile');
+  var html        = document.documentElement;
   function setDark(on) {
     html.classList.toggle('dark', on);
     try { localStorage.setItem('dm', on ? '1' : '0'); } catch(e) {}
-    if (dmBtn) dmBtn.innerHTML = on
-      ? '<i class="fa-solid fa-sun"></i> Light'
-      : '<i class="fa-solid fa-moon"></i> Dark';
+    var icon  = on ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+    if (dmBtn)       dmBtn.innerHTML       = icon + (on ? ' Light' : ' Dark');
+    if (dmBtnMobile) dmBtnMobile.innerHTML = icon + ' Toggle Dark Mode';
   }
   try { if (localStorage.getItem('dm') === '1') setDark(true); } catch(e) {}
-  if (dmBtn) dmBtn.addEventListener('click', function () { setDark(!html.classList.contains('dark')); });
+  if (dmBtn)       dmBtn.addEventListener('click',       function () { setDark(!html.classList.contains('dark')); });
+  if (dmBtnMobile) dmBtnMobile.addEventListener('click', function () { setDark(!html.classList.contains('dark')); });
 
   /* ── Typing animation ── */
   var typeEl = document.getElementById('heroType');
