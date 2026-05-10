@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Kofi Ampomah</title>
-    <link>https://kampomah.github.io/my_personalphd_website/</link>
+    <link>http://localhost:1313/my_personalphd_website/</link>
     <description>Recent content in Home on Kofi Ampomah</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Apr 2026 16:15:47 -0500</lastBuildDate>
-    <atom:link href="https://kampomah.github.io/my_personalphd_website/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/my_personalphd_website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>https://kampomah.github.io/my_personalphd_website/contact/</link>
+      <link>http://localhost:1313/my_personalphd_website/contact/</link>
       <pubDate>Sat, 25 Apr 2026 16:15:47 -0500</pubDate>
-      <guid>https://kampomah.github.io/my_personalphd_website/contact/</guid>
-      <description>&lt;h1 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href=&#34;mailto:kampomah@crimson.ua.edu&#34;&gt;kampomah@crimson.ua.edu&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;https://www.linkedin.com/in/kofi-ampomah-306771189/&#34;&gt;Kofi Ampomah&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/Ampomah-Kofi&#34;&gt;Ampomah-Kofi&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Scholar&lt;/strong&gt;: &lt;a href=&#34;https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&amp;amp;hl=en&#34;&gt;Kofi Ampomah&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://kampomah.github.io/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;about&#34;&gt;About&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/my_personalphd_website/contact/</guid>
+      <description>&lt;h1 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href=&#34;mailto:kampomah@crimson.ua.edu&#34;&gt;kampomah@crimson.ua.edu&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;: &lt;a href=&#34;https://www.linkedin.com/in/kofi-ampomah-306771189/&#34;&gt;Kofi Ampomah&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/Ampomah-Kofi&#34;&gt;Ampomah-Kofi&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Scholar&lt;/strong&gt;: &lt;a href=&#34;https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&amp;amp;hl=en&#34;&gt;Kofi Ampomah&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;about&#34;&gt;About&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Countries Visited</title>
-      <link>https://kampomah.github.io/my_personalphd_website/countries/</link>
+      <link>http://localhost:1313/my_personalphd_website/countries/</link>
       <pubDate>Sat, 25 Apr 2026 16:15:39 -0500</pubDate>
-      <guid>https://kampomah.github.io/my_personalphd_website/countries/</guid>
-      <description>&lt;h1 id=&#34;countries-i-have-visited&#34;&gt;Countries I Have Visited&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ghana&lt;/strong&gt; — Home country&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rwanda&lt;/strong&gt; — East Africa&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Qatar&lt;/strong&gt; — Middle East&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;USA&lt;/strong&gt; — Current residence (Tuscaloosa, Alabama)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://kampomah.github.io/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;about&#34;&gt;About&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/my_personalphd_website/countries/</guid>
+      <description>&lt;h1 id=&#34;countries-i-have-visited&#34;&gt;Countries I Have Visited&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ghana&lt;/strong&gt; — Home country&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rwanda&lt;/strong&gt; — East Africa&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Qatar&lt;/strong&gt; — Middle East&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;USA&lt;/strong&gt; — Current residence (Tuscaloosa, Alabama)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;about&#34;&gt;About&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Research</title>
-      <link>https://kampomah.github.io/my_personalphd_website/projects/</link>
+      <link>http://localhost:1313/my_personalphd_website/projects/</link>
       <pubDate>Sat, 25 Apr 2026 16:15:19 -0500</pubDate>
-      <guid>https://kampomah.github.io/my_personalphd_website/projects/</guid>
+      <guid>http://localhost:1313/my_personalphd_website/projects/</guid>
       <description>&lt;h1 id=&#34;research-projects&#34;&gt;Research Projects&lt;/h1&gt;&#xA;&lt;p&gt;My research addresses critical challenges in AI trustworthiness, privacy, and security — with a particular focus on real-world social and medical systems.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;botlens--privacy-auditing-for-third-party-community-bots&#34;&gt;BotLens — Privacy Auditing for Third-Party Community Bots&lt;/h2&gt;&#xA;&lt;p&gt;BotLens is a privacy auditing framework that systematically analyzes how third-party community bots on social platforms collect, process, and expose user data. As bots become deeply integrated into online communities (Discord, Reddit, Slack), users often have little visibility into what data these bots access. BotLens surfaces these hidden privacy risks and informs better platform governance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://kampomah.github.io/my_personalphd_website/about/</link>
+      <link>http://localhost:1313/my_personalphd_website/about/</link>
       <pubDate>Sat, 25 Apr 2026 16:15:08 -0500</pubDate>
-      <guid>https://kampomah.github.io/my_personalphd_website/about/</guid>
-      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;I am a PhD student in Computer Science at The University of Alabama (Tuscaloosa), originally from Ghana. I am a member of the &lt;strong&gt;UA-SPECTRAL Lab&lt;/strong&gt;, where my research focuses on trustworthy AI, data security, and the complex intersections between machine learning and human behavior.&lt;/p&gt;&#xA;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Origin&lt;/strong&gt;: Ghana&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Current Location&lt;/strong&gt;: Tuscaloosa, Alabama, USA&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lab&lt;/strong&gt;: UA-SPECTRAL Lab, The University of Alabama&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Field&lt;/strong&gt;: Computer Science (PhD)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PhD in Computer Science, The University of Alabama, USA (In Progress)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trustworthy AI and data security&lt;/li&gt;&#xA;&lt;li&gt;Human-centered security and usable privacy&lt;/li&gt;&#xA;&lt;li&gt;Adversarial machine learning&lt;/li&gt;&#xA;&lt;li&gt;Natural Language Processing (NLP)&lt;/li&gt;&#xA;&lt;li&gt;Third-party bot ecosystems on social platforms&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://kampomah.github.io/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;projects&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/my_personalphd_website/about/</guid>
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;I am a PhD student in Computer Science at The University of Alabama (Tuscaloosa), originally from Ghana. I am a member of the &lt;strong&gt;UA-SPECTRAL Lab&lt;/strong&gt;, where my research focuses on trustworthy AI, data security, and the complex intersections between machine learning and human behavior.&lt;/p&gt;&#xA;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Origin&lt;/strong&gt;: Ghana&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Current Location&lt;/strong&gt;: Tuscaloosa, Alabama, USA&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lab&lt;/strong&gt;: UA-SPECTRAL Lab, The University of Alabama&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Field&lt;/strong&gt;: Computer Science (PhD)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PhD in Computer Science, The University of Alabama, USA (In Progress)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;research-interests&#34;&gt;Research Interests&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trustworthy AI and data security&lt;/li&gt;&#xA;&lt;li&gt;Human-centered security and usable privacy&lt;/li&gt;&#xA;&lt;li&gt;Adversarial machine learning&lt;/li&gt;&#xA;&lt;li&gt;Natural Language Processing (NLP)&lt;/li&gt;&#xA;&lt;li&gt;Third-party bot ecosystems on social platforms&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;projects&#34;&gt;Projects&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Publications</title>
-      <link>https://kampomah.github.io/my_personalphd_website/publications/</link>
+      <link>http://localhost:1313/my_personalphd_website/publications/</link>
       <pubDate>Sat, 25 Apr 2026 16:15:00 -0500</pubDate>
-      <guid>https://kampomah.github.io/my_personalphd_website/publications/</guid>
-      <description>&lt;h1 id=&#34;publications&#34;&gt;Publications&lt;/h1&gt;&#xA;&lt;p&gt;For a complete and up-to-date list, see my &lt;a href=&#34;https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&amp;amp;hl=en&#34;&gt;Google Scholar profile&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2026&#34;&gt;2026&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond Attack Success Rate: A Multi-Metric Evaluation of Adversarial Transferability in Medical Imaging Models&lt;/strong&gt;&#xA;E. Curl, K. Ampomah, M. Erfan, S. Dibbo&#xA;&lt;em&gt;Preprints, 2026&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Topics:&lt;/strong&gt; Adversarial ML · Medical Imaging · Trustworthy AI&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://kampomah.github.io/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;https://kampomah.github.io/my_personalphd_website/projects/&#34;&gt;Research&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/my_personalphd_website/publications/</guid>
+      <description>&lt;h1 id=&#34;publications&#34;&gt;Publications&lt;/h1&gt;&#xA;&lt;p&gt;For a complete and up-to-date list, see my &lt;a href=&#34;https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&amp;amp;hl=en&#34;&gt;Google Scholar profile&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2026&#34;&gt;2026&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond Attack Success Rate: A Multi-Metric Evaluation of Adversarial Transferability in Medical Imaging Models&lt;/strong&gt;&#xA;E. Curl, K. Ampomah, M. Erfan, S. Dibbo&#xA;&lt;em&gt;Preprints, 2026&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Topics:&lt;/strong&gt; Adversarial ML · Medical Imaging · Trustworthy AI&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/my_personalphd_website/&#34;&gt;Back to Home&lt;/a&gt; | &lt;a href=&#34;http://localhost:1313/my_personalphd_website/projects/&#34;&gt;Research&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

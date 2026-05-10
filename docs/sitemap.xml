@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kampomah.github.io/my_personalphd_website/contact/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/contact/</loc>
     <lastmod>2026-04-25T16:15:47-05:00</lastmod>
   </url><url>
-    <loc>https://kampomah.github.io/my_personalphd_website/countries/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/countries/</loc>
     <lastmod>2026-04-25T16:15:39-05:00</lastmod>
   </url><url>
-    <loc>https://kampomah.github.io/my_personalphd_website/projects/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/projects/</loc>
     <lastmod>2026-04-25T16:15:19-05:00</lastmod>
   </url><url>
-    <loc>https://kampomah.github.io/my_personalphd_website/about/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/about/</loc>
     <lastmod>2026-04-25T16:15:08-05:00</lastmod>
   </url><url>
-    <loc>https://kampomah.github.io/my_personalphd_website/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/</loc>
     <lastmod>2026-04-25T16:15:03-05:00</lastmod>
   </url><url>
-    <loc>https://kampomah.github.io/my_personalphd_website/publications/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/publications/</loc>
     <lastmod>2026-04-25T16:15:00-05:00</lastmod>
   </url><url>
-    <loc>https://kampomah.github.io/my_personalphd_website/categories/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/categories/</loc>
   </url><url>
-    <loc>https://kampomah.github.io/my_personalphd_website/tags/</loc>
+    <loc>http://localhost:1313/my_personalphd_website/tags/</loc>
   </url>
 </urlset>
