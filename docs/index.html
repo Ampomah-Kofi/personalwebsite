@@ -1,52 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="generator" content="Hugo 0.160.1">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kofi Ampomah — PhD · AI Security &amp; Privacy</title>
-  <meta name="description" content="PhD Student in Computer Science · UA-SPECTRAL Lab · University of Alabama. Research in usable security &amp; privacy, human-centered computing, adversarial ML, and AI security.">
+  <title>Kofi Ampomah</title>
+  <meta name="description" content="PhD Student in Computer Science · UA-SPECTRAL Lab · University of Alabama">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
-  <!-- Open Graph / link-preview tags -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://ampomah-kofi.github.io/">
-  <meta property="og:title"       content="Kofi Ampomah — PhD Student in Computer Science">
-  <meta property="og:description" content="PhD Researcher at UA-SPECTRAL Lab · Usable Security &amp; Privacy · Human-Centered Computing · AI Security · Adversarial ML · Seeking Summer 2027 Research Internship">
-  <meta property="og:image"       content="https://ampomah-kofi.github.io/images/profile.jpg">
-  <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:title"      content="Kofi Ampomah — PhD · AI Security &amp; Privacy">
-  <meta name="twitter:description" content="PhD Researcher · Usable Security &amp; Privacy · Human-Centered Computing · AI Security · Adversarial ML · Seeking Summer 2027 Research Internship">
-  <meta name="twitter:image"      content="https://ampomah-kofi.github.io/images/profile.jpg">
-  <link rel="canonical"           href="https://ampomah-kofi.github.io/">
-  <meta name="keywords"           content="Kofi Ampomah, PhD, Computer Science, Usable Security, Privacy, Human-Centered Computing, Adversarial ML, AI Security, University of Alabama, UA-SPECTRAL Lab, Machine Learning, Trustworthy AI">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Kofi Ampomah",
-    "url": "https://ampomah-kofi.github.io/",
-    "image": "https://ampomah-kofi.github.io/images/profile.jpg",
-    "jobTitle": "PhD Student in Computer Science",
-    "description": "PhD Researcher at UA-SPECTRAL Lab, University of Alabama. Research in usable security and privacy, human-centered computing, adversarial ML, and AI security.",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "The University of Alabama",
-      "url": "https://www.ua.edu/"
-    },
-    "alumniOf": [
-      {"@type": "CollegeOrUniversity", "name": "University of Ghana"},
-      {"@type": "CollegeOrUniversity", "name": "Ghana Communication Technology University"}
-    ],
-    "sameAs": [
-      "https://github.com/Ampomah-Kofi",
-      "https://www.linkedin.com/in/kofi-ampomah-306771189/",
-      "https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en"
-    ],
-    "email": "kampomah@crimson.ua.edu",
-    "knowsAbout": ["Usable Security and Privacy", "Human-Centered Computing", "Adversarial Machine Learning", "AI Security", "Trustworthy AI", "Bot Ecosystems", "Natural Language Processing"]
-  }
-  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,416 +14,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   
-  <link rel="stylesheet" href="ananke/css/custom.min.css">
-
-  <style>
-  /* ── Page loader ── */
-  #pgLoader{position:fixed;inset:0;z-index:10000;
-    background:linear-gradient(135deg,#1e1b4b 0%,#312e81 52%,#831843 100%);
-    display:flex;align-items:center;justify-content:center;flex-direction:column;
-    transition:opacity .55s ease,visibility .55s ease}
-  #pgLoader.hide{opacity:0;visibility:hidden;pointer-events:none}
-  #pgLoader__welcome{font-size:.72rem;font-weight:600;letter-spacing:3px;
-    text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.6rem;
-    text-align:center;width:100%;padding:0 1.5rem;
-    animation:loaderPop .65s cubic-bezier(.2,0,0,1) both}
-  #pgLoader__name{font-family:'Roboto Slab',serif;font-size:2.2rem;font-weight:700;
-    color:#fff;letter-spacing:-.5px;text-align:center;line-height:1.2;
-    width:100%;padding:0 1.5rem;
-    animation:loaderPop .65s .08s cubic-bezier(.2,0,0,1) both}
-  #pgLoader__sub{font-size:.75rem;font-weight:500;letter-spacing:1px;
-    color:rgba(255,255,255,.45);text-transform:uppercase;margin-top:.4rem;
-    text-align:center;width:100%;padding:0 1.5rem;line-height:1.6;
-    animation:loaderPop .65s .1s cubic-bezier(.2,0,0,1) both}
-  #pgLoader__bar{width:220px;height:5px;background:rgba(255,255,255,.08);
-    border-radius:99px;margin:1.6rem auto 0;overflow:hidden;position:relative;
-    box-shadow:0 0 0 1px rgba(255,255,255,.06);
-    animation:loaderPop .65s .15s cubic-bezier(.2,0,0,1) both}
-  #pgLoader__fill{height:100%;width:0;border-radius:99px;position:relative;
-    background:linear-gradient(90deg,#34d399,#4ade80,#a7f3d0);
-    box-shadow:0 0 14px rgba(74,222,128,.9),0 0 30px rgba(74,222,128,.45);
-    animation:loaderFill 1.8s .3s cubic-bezier(.4,0,.2,1) forwards}
-  #pgLoader__fill::after{content:'';position:absolute;inset:0;border-radius:99px;
-    background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.55) 50%,transparent 100%);
-    animation:loaderShimmer 1.4s .6s ease-in-out infinite}
-  @keyframes loaderShimmer{from{transform:translateX(-100%)}to{transform:translateX(250%)}}
-  @keyframes loaderPop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-  @keyframes loaderFill{from{width:0}to{width:100%}}
-
-  /* ── Classy show-more button ── */
-  .show-more-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;
-    margin-top:.9rem;padding:.65rem 1.25rem;
-    background:linear-gradient(135deg,rgba(67,56,202,.07),rgba(158,27,50,.05));
-    border:1.5px solid rgba(67,56,202,.22);border-radius:12px;
-    color:var(--primary);font-size:.82rem;font-weight:600;cursor:pointer;
-    transition:border-color .22s,box-shadow .22s,transform .22s,color .22s,background .22s;
-    font-family:roboto,sans-serif;letter-spacing:.3px;position:relative;overflow:hidden}
-  .show-more-btn i{transition:transform .3s cubic-bezier(.2,0,0,1)}
-  .show-more-btn.expanded i{transform:rotate(180deg)}
-  .show-more-btn:hover{border-color:rgba(67,56,202,.42);box-shadow:0 4px 18px rgba(67,56,202,.14);
-    transform:translateY(-1px);color:var(--primary-dark);
-    background:linear-gradient(135deg,rgba(67,56,202,.12),rgba(158,27,50,.08))}
-  .show-more-btn--dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.85)}
-  .show-more-btn--dark:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.35);
-    color:#fff;box-shadow:0 4px 18px rgba(0,0,0,.22)}
-
-  /* ── Hire / availability popup ── */
-  .hire-popup{position:fixed;bottom:8.5rem;left:1.5rem;z-index:9996;width:258px;
-    background:linear-gradient(140deg,#18104a 0%,#29207a 55%,#18104a 100%);
-    border:1px solid rgba(74,222,128,.38);border-radius:16px;
-    padding:1.15rem 1.35rem 1.1rem;
-    box-shadow:0 0 0 1px rgba(74,222,128,.1),0 10px 36px rgba(0,0,0,.6),0 0 40px rgba(74,222,128,.1);
-    transform:translateY(140%);opacity:0;pointer-events:none;
-    transition:transform .55s cubic-bezier(.2,0,0,1),opacity .5s;font-family:roboto,sans-serif}
-  .hire-popup.visible{transform:translateY(0);opacity:1;pointer-events:all}
-  .hire-popup__close{position:absolute;top:.55rem;right:.65rem;background:rgba(255,255,255,.1);
-    border:none;width:22px;height:22px;border-radius:50%;color:rgba(255,255,255,.58);
-    font-size:.68rem;cursor:pointer;display:flex;align-items:center;justify-content:center;
-    transition:background .15s,color .15s}
-  .hire-popup__close:hover{background:rgba(255,255,255,.22);color:#fff}
-  .hire-popup__dot{width:8px;height:8px;border-radius:50%;background:#4ade80;
-    box-shadow:0 0 0 3px rgba(74,222,128,.25),0 0 10px rgba(74,222,128,.8);
-    animation:internshipPulse 2s ease-in-out infinite;margin-bottom:.6rem}
-  .hire-popup__eyebrow{font-size:.62rem;font-weight:700;letter-spacing:1.4px;
-    text-transform:uppercase;color:#4ade80;margin-bottom:.32rem}
-  .hire-popup__title{font-size:.9rem;color:#fff;line-height:1.4;margin-bottom:.28rem}
-  .hire-popup__title strong{font-weight:700;color:#bbf7d0}
-  .hire-popup__sub{font-size:.76rem;color:rgba(255,255,255,.58);line-height:1.5;margin-bottom:.8rem}
-  .hire-popup__cta{display:inline-flex;align-items:center;gap:.32rem;
-    background:rgba(74,222,128,.18);border:1px solid rgba(74,222,128,.42);
-    color:#bbf7d0;font-size:.74rem;font-weight:600;padding:.38rem .92rem;
-    border-radius:8px;text-decoration:none;transition:background .15s,color .15s}
-  .hire-popup__cta:hover{background:rgba(74,222,128,.32);color:#fff}
-  @media(max-width:480px){.hire-popup{bottom:6rem;left:.75rem;width:calc(100vw - 1.5rem)}}
-
-  /* ── Scroll progress bar ── */
-  .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;
-    background:linear-gradient(90deg,#4338CA,#9e1b32);
-    z-index:201;pointer-events:none;
-    box-shadow:0 0 7px rgba(158,27,50,.45);
-    transition:width .08s linear}
-
-  /* ── Back to top ── */
-  .back-to-top{position:fixed;bottom:7.5rem;right:1.5rem;z-index:9995;
-    width:42px;height:42px;border-radius:50%;
-    background:linear-gradient(135deg,#4338CA,#3730A3);
-    border:none;color:#fff;font-size:.85rem;cursor:pointer;
-    display:flex;align-items:center;justify-content:center;
-    box-shadow:0 4px 16px rgba(67,56,202,.45);
-    opacity:0;transform:translateY(14px);pointer-events:none;
-    transition:opacity .25s,transform .25s,box-shadow .2s}
-  .back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:all}
-  .back-to-top:hover{box-shadow:0 6px 22px rgba(67,56,202,.6);transform:translateY(-3px)}
-  @media(max-width:480px){.back-to-top{bottom:5.5rem;right:.75rem;width:38px;height:38px}}
-
-  /* ── Nav brand (KA initials) ── */
-  .nav__brand{position:absolute;left:1.5rem;top:50%;transform:translateY(-50%);
-    font-family:'Roboto Slab',serif;font-size:1.1rem;font-weight:700;
-    color:#fff;letter-spacing:.5px;opacity:.88;text-decoration:none;
-    transition:opacity .15s,color .15s}
-  .nav__brand:hover{opacity:1;color:#fff}
-  @media(max-width:680px){.nav__brand{left:1rem;font-size:.9rem}}
-
-  /* ── Nav scrollspy active state ── */
-  .nav__link.active{background:rgba(255,255,255,.18);color:#fff}
-
-  /* ── Two-color override: garnet replaces pink ── */
-  :root{--accent:#9e1b32;--accent-dark:#7a1325;--accent-tint:rgba(158,27,50,.08)}
-
-  /* ── Typing animation ── */
-  .hero-type{font-family:'Roboto Mono',monospace;font-size:.88rem;
-    color:rgba(255,255,255,.72);min-height:1.5rem;letter-spacing:.2px;
-    display:flex;align-items:center;margin-bottom:.3rem}
-  .hero-type__cursor{width:2px;height:1rem;background:rgba(255,255,255,.8);
-    animation:cBlink .75s ease-in-out infinite;flex-shrink:0;margin-left:2px}
-  @keyframes cBlink{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
-
-  /* ── Section dot navigator ── */
-  .section-nav{position:fixed;right:1.5rem;bottom:13.5rem;z-index:9993;
-    display:flex;flex-direction:column;gap:.22rem;align-items:flex-end}
-  .sn-item{display:flex;align-items:center;gap:.42rem;background:none;border:none;
-    cursor:pointer;padding:.08rem 0;opacity:.48;transition:opacity .18s}
-  .sn-item:hover,.sn-item.active{opacity:1}
-  .sn-dot{width:7px;height:7px;border-radius:50%;
-    background:rgba(255,255,255,.4);border:1.5px solid rgba(255,255,255,.55);
-    flex-shrink:0;transition:background .2s,transform .2s,box-shadow .2s;
-    box-shadow:0 0 4px rgba(0,0,0,.35);order:2}
-  .sn-item.active .sn-dot{background:#4338CA;border-color:#4338CA;
-    box-shadow:0 0 8px rgba(67,56,202,.75);transform:scale(1.5)}
-  .sn-label{font-family:roboto,sans-serif;font-size:.6rem;font-weight:700;
-    letter-spacing:.3px;color:rgba(255,255,255,.9);
-    background:rgba(8,6,18,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-    padding:.2rem .52rem;border-radius:6px;white-space:nowrap;order:1;
-    opacity:0;transform:translateX(5px);pointer-events:none;
-    transition:opacity .15s,transform .15s;border:1px solid rgba(255,255,255,.08)}
-  .sn-item:hover .sn-label,.sn-item.active .sn-label{opacity:1;transform:translateX(0)}
-  @media(max-width:768px){.section-nav{display:none}}
-
-  /* ── Dark mode toggle button ── */
-  .dm-btn{background:transparent;border:1px solid rgba(255,255,255,.2);
-    color:rgba(255,255,255,.72);font-size:.76rem;cursor:pointer;
-    padding:.28rem .52rem;border-radius:8px;
-    display:flex;align-items:center;gap:.32rem;line-height:1;
-    font-family:roboto,sans-serif;font-weight:600;letter-spacing:.2px;
-    transition:color .15s,background .15s,border-color .15s;
-    position:absolute;right:3.75rem;top:50%;transform:translateY(-50%)}
-  .dm-btn:hover{color:#fff;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
-  @media(max-width:680px){.dm-btn{display:none}}
-  .dm-btn-mobile{display:none;width:100%;align-items:center;justify-content:center;gap:.5rem;
-    padding:.75rem 1.5rem;font-size:.85rem;font-weight:500;letter-spacing:.4px;
-    background:rgba(255,255,255,.06);border:none;border-top:1px solid rgba(255,255,255,.1);
-    color:rgba(255,255,255,.7);cursor:pointer;font-family:roboto,sans-serif;
-    transition:background .15s,color .15s;margin-top:.25rem}
-  .dm-btn-mobile:hover{background:rgba(255,255,255,.13);color:#fff}
-  @media(max-width:680px){.dm-btn-mobile{display:flex}}
-
-  /* ── Dark mode overrides ── */
-  html.dark body{background:#07050f!important;color:#c8c5e0}
-  html.dark section{background:#0e0c1c!important}
-  html.dark nav.nav{background:rgba(7,5,20,.98)!important}
-  /* Only darken light-background cards; leave dark gradient cards alone */
-  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#07111a"]):not([style*="07111a"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) {
-    background:#181626!important;border-color:rgba(255,255,255,.08)!important}
-  html.dark .section-title{color:#e2e0f0!important}
-  html.dark .section-sub{color:rgba(185,180,220,.62)!important}
-  html.dark .section-label{background:rgba(255,255,255,.09)!important;color:rgba(185,180,220,.55)!important}
-  html.dark footer{background:#07050f!important;border-top-color:rgba(255,255,255,.07)!important}
-  html.dark footer a{color:rgba(255,255,255,.45)!important}
-  html.dark footer .footer__inner>span{color:rgba(255,255,255,.45)!important}
-  html.dark .hero-wave path{fill:#0e0c1c!important}
-  html.dark .section-blob{opacity:.08}
-  /* Text inside light cards */
-  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) p,
-  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) li {
-    color:rgba(190,186,220,.76)!important}
-  html.dark .card:not([style*="#1e1b4b"]):not([style*="#3b0010"]):not([style*="#5c0e1e"]):not([style*="#312e81"]):not([style*="#18104a"]):not([style*="#3730A3"]):not([style*="#9e1b32"]):not([style*="#7a1325"]) h3 {
-    color:#dddaee!important}
-  html.dark .skill-badge:not(.skill-badge--accent){background:rgba(67,56,202,.1)!important;
-    color:rgba(185,180,220,.72)!important;border-color:rgba(67,56,202,.2)!important}
-  html.dark .show-more-btn:not(.show-more-btn--dark){background:rgba(67,56,202,.09)!important;
-    border-color:rgba(67,56,202,.22)!important;color:rgba(185,180,220,.8)!important}
-  html.dark .news-badge{background:rgba(67,56,202,.2)!important;color:rgba(185,180,220,.82)!important}
-  html.dark .award-card{background:#1c1a2e!important;border-color:rgba(255,255,255,.07)!important}
-  html.dark .interest-item__icon{background:linear-gradient(135deg,#2a228a,#7a1325)!important}
-  html.dark .news-title,html.dark .award-card__title{color:#dddaee!important}
-  html.dark .news-sub,html.dark .award-card__org{color:rgba(185,180,220,.65)!important}
-  html.dark a:not(.nav__link):not(.hero-social):not(.btn):not(.hire-popup__cta):not([style*="color:#fff"]){color:#7b94f8}
-
-  /* ── Dark mode: comprehensive inline-color fixes ── */
-  html.dark [style*="color:#1e1b4b"]{color:#e2e0f0!important}
-  html.dark [style*="color:#374151"]{color:rgba(185,180,220,.82)!important}
-  html.dark [style*="color:#6b7280"]{color:rgba(185,180,220,.58)!important}
-  html.dark [style*="color:#9ca3af"]{color:rgba(185,180,220,.42)!important}
-  html.dark [style*="color:#3730A3"]{color:#a5b4fc!important}
-  html.dark [style*="color:#4338CA"]:not(.nav__link):not(.hero-social):not(.btn):not(.hire-popup__cta){color:#a5b4fc!important}
-  html.dark [style*="color:#9e1b32"]{color:#fda4af!important}
-  html.dark [style*="color:#7a1325"]{color:#fda4af!important}
-  html.dark [style*="color:var(--accent)"]{color:#fda4af!important}
-  html.dark [style*="color:var(--primary)"]:not(.btn):not(.show-more-btn){color:#a5b4fc!important}
-  /* Country card text */
-  html.dark .country-card__name{color:#e2e0f0!important}
-  html.dark .country-card__tag{color:rgba(185,180,220,.55)!important}
-  /* Topic chips */
-  html.dark .chip--garnet{background:rgba(158,27,50,.22)!important;color:#fda4af!important;border-color:rgba(158,27,50,.35)!important}
-  html.dark .chip--indigo{background:rgba(67,56,202,.18)!important;color:#a5b4fc!important;border-color:rgba(67,56,202,.3)!important}
-  /* Scholar metrics panel */
-  html.dark .scholar-stat{background:rgba(255,255,255,.04)!important;border-color:rgba(255,255,255,.08)!important}
-  html.dark .scholar-stat__num{color:#e2e0f0!important}
-  html.dark .scholar-stat__label{color:rgba(185,180,220,.6)!important}
-  /* Publication card text */
-  html.dark .pub-card__title{color:#e2e0f0!important}
-  html.dark .pub-card__authors{color:rgba(185,180,220,.75)!important}
-  html.dark .pub-card__venue{color:rgba(185,180,220,.52)!important}
-  /* Skill card headings */
-  html.dark .skill-card__head{color:#e2e0f0!important}
-  /* Travel section categories */
-  html.dark .travel-path{border-color:rgba(255,255,255,.12)!important}
-  /* Section category labels */
-  html.dark [style*="color:var(--primary-dark)"]:not(.btn){color:#a5b4fc!important}
-
-  /* ── CV Modal ── */
-  .cv-modal{position:fixed;inset:0;z-index:99999;display:none;
-    align-items:center;justify-content:center}
-  .cv-modal.open{display:flex}
-  .cv-modal__bd{position:absolute;inset:0;background:rgba(0,0,0,.75);
-    backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);cursor:pointer}
-  .cv-modal__box{position:relative;z-index:1;
-    width:min(92vw,820px);height:min(90vh,950px);
-    background:#fff;border-radius:14px;overflow:hidden;
-    display:flex;flex-direction:column;
-    box-shadow:0 28px 65px rgba(0,0,0,.75)}
-  .cv-modal__head{display:flex;align-items:center;justify-content:space-between;
-    padding:.7rem 1.25rem;background:linear-gradient(135deg,#1e1b4b,#4338CA);flex-shrink:0}
-  .cv-modal__title{font-family:'Roboto Slab',serif;font-size:.93rem;font-weight:700;color:#fff}
-  .cv-modal__close{background:rgba(255,255,255,.15);border:none;color:#fff;
-    width:26px;height:26px;border-radius:50%;cursor:pointer;
-    display:flex;align-items:center;justify-content:center;font-size:.75rem;
-    transition:background .15s}
-  .cv-modal__close:hover{background:rgba(255,255,255,.3)}
-  .cv-modal__frame{flex:1;border:none;width:100%;min-height:0}
-  .cv-modal__foot{padding:.55rem 1.25rem;background:#f8f9fe;flex-shrink:0;
-    display:flex;justify-content:space-between;align-items:center;
-    border-top:1px solid rgba(0,0,0,.06)}
-  .cv-modal__note{font-size:.74rem;color:#9ca3af}
-  .cv-modal__dl{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;
-    font-weight:600;color:#4338CA;text-decoration:none;
-    padding:.4rem 1rem;border:1.5px solid rgba(67,56,202,.28);border-radius:8px;
-    transition:background .15s}
-  .cv-modal__dl:hover{background:rgba(67,56,202,.06)}
-
-  /* ── Talks section ── */
-  .talk-item{display:flex;gap:1rem;align-items:flex-start;padding:.85rem 1rem;
-    border-radius:10px;background:#4338CA0d;margin-bottom:.6rem}
-  html.dark .talk-item{background:rgba(67,56,202,.08)!important}
-  .talk-item__icon{width:36px;height:36px;border-radius:9px;
-    background:linear-gradient(135deg,#4338CA,#9e1b32);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;font-size:.85rem;flex-shrink:0}
-  .talk-item__type{font-size:.6rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
-    color:#4338CA;margin-bottom:.15rem}
-  .talk-item__title{font-size:.9rem;font-weight:600;color:#1e1b4b;line-height:1.35;margin-bottom:.15rem}
-  .talk-item__venue{font-size:.78rem;color:#6b7280;margin-bottom:.12rem}
-  .talk-item__date{font-size:.7rem;color:#9ca3af}
-
-  /* ── Teaching section ── */
-  .teaching-course{display:flex;gap:.75rem;align-items:flex-start;padding:.7rem 0;
-    border-bottom:1px solid rgba(67,56,202,.08)}
-  .teaching-course:last-child{border-bottom:none}
-  .teaching-course__icon{width:30px;height:30px;border-radius:8px;
-    background:linear-gradient(135deg,#4338CA,#9e1b32);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;font-size:.72rem;flex-shrink:0;margin-top:.1rem}
-  .teaching-course__code{font-size:.65rem;font-weight:700;letter-spacing:.5px;
-    text-transform:uppercase;color:#4338CA;margin-bottom:.1rem}
-  .teaching-course__name{font-size:.88rem;font-weight:600;color:#1e1b4b;margin-bottom:.1rem}
-  .teaching-course__meta{font-size:.76rem;color:#6b7280}
-
-  /* ── Resources / Reading list ── */
-  .resource-item{display:flex;gap:.65rem;align-items:flex-start;padding:.72rem 0;
-    border-bottom:1px solid rgba(67,56,202,.07)}
-  .resource-item:last-child{border-bottom:none}
-  html.dark .resource-item{border-bottom-color:rgba(255,255,255,.06)!important}
-  .resource-item__icon{width:30px;height:30px;border-radius:8px;
-    background:linear-gradient(135deg,#4338CA,#9e1b32);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;font-size:.72rem;flex-shrink:0;margin-top:.1rem}
-  .resource-tag{font-size:.58rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
-    padding:.1rem .48rem;border-radius:20px;display:inline-block;margin-bottom:.18rem}
-  .resource-tag--paper{background:#EEF2FF;color:#4338CA}
-  .resource-tag--tool{background:#fce8ea;color:#7a1325}
-  .resource-tag--course{background:#f0fdf4;color:#166534}
-  .resource-item__title{font-size:.87rem;font-weight:600;color:#1e1b4b;
-    margin-bottom:.1rem;line-height:1.35}
-  .resource-item__title a{color:inherit;text-decoration:none}
-  .resource-item__title a:hover{color:#4338CA;text-decoration:underline;text-underline-offset:2px}
-  .resource-item__desc{font-size:.77rem;color:#6b7280;line-height:1.5}
-
-  /* ── GitHub activity chart ── */
-  .gh-chart-wrap{margin-top:1rem;border-radius:10px;overflow:hidden;background:#0d1117;padding:.75rem .85rem}
-  .gh-chart-wrap img{width:100%;display:block;border-radius:6px}
-  .gh-chart-wrap p{font-size:.68rem;color:rgba(0,210,255,.45);text-align:center;
-    font-family:'Roboto Mono',monospace;letter-spacing:1px;margin-top:.5rem}
-
-  /* ── Accessibility ── */
-  /* Skip to main content */
-  .skip-link{position:fixed;left:-100%;top:.75rem;z-index:100001;
-    background:#4338CA;color:#fff!important;padding:.52rem 1.25rem;
-    border-radius:0 8px 8px 0;font-size:.88rem;font-weight:700;
-    text-decoration:none;transition:left .2s;
-    box-shadow:0 4px 16px rgba(67,56,202,.5);letter-spacing:.2px}
-  .skip-link:focus{left:0;outline:none}
-  html.dark .skip-link{background:#a5b4fc;color:#0e0c1c!important}
-  /* Focus-visible ring for keyboard users */
-  :focus-visible{outline:2.5px solid #4338CA;outline-offset:3px;border-radius:3px}
-  html.dark :focus-visible{outline-color:#a5b4fc}
-  /* Extra specificity for buttons and links */
-  a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
-    outline:2.5px solid #4338CA;outline-offset:3px;border-radius:4px}
-  html.dark a:focus-visible,html.dark button:focus-visible,
-  html.dark [tabindex]:focus-visible{outline-color:#a5b4fc}
-  /* Respect user's reduced-motion preference */
-  @media(prefers-reduced-motion:reduce){
-    *{animation-duration:.01ms!important;animation-iteration-count:1!important;
-      transition-duration:.01ms!important}}
-
-  /* ── Touch targets ≥ 44px (WCAG 2.5.5) ── */
-  .btn{min-height:44px}
-  .hero-social{min-height:44px}
-  .show-more-btn{min-height:44px}
-  .nav__hamburger{min-height:44px;min-width:44px}
-
-  /* ── Mobile: internship banner stacks on narrow screens ── */
-  @media(max-width:520px){
-    .internship-banner{flex-direction:column;align-items:flex-start;gap:.65rem}
-    .internship-banner__cta{align-self:stretch;text-align:center;justify-content:center;display:block;padding:.52rem 1.1rem}
-    .internship-banner__main{font-size:.82rem}
-  }
-
-  /* ── Mobile: hero photo scales on very small screens ── */
-  @media(max-width:380px){
-    .hero-photo,.hero-photo-fallback{width:140px;height:140px}
-    .hero-name{font-size:1.75rem!important}
-  }
-
-  /* ── Mobile: tighter hero spacing at 400px ── */
-  @media(max-width:400px){
-    .hero-chips,.hero-socials{gap:.3rem}
-    .hero-btns{flex-direction:column;align-items:stretch}
-    .hero-btns .btn{justify-content:center}
-    .btn{font-size:.82rem;padding:.55rem 1.1rem}
-  }
-
-  /* ── Mobile: news items stack badge above text ── */
-  @media(max-width:480px){
-    .news-item{flex-direction:column;gap:.35rem}
-    .news-badge{align-self:flex-start}
-    .pub-card{flex-direction:column;gap:.75rem}
-    .pub-card__year{width:44px;height:44px;font-size:.75rem}
-  }
-
-  /* ── Mobile: award cards stack icon/text/year ── */
-  @media(max-width:440px){
-    .award-card{flex-wrap:wrap}
-    .award-card__year{margin-left:auto}
-  }
-  </style>
+  <link rel="stylesheet" href="/my_personalphd_website/ananke/css/custom.min.css">
 </head>
 <body>
-<div id="pgLoader" style="position:fixed;inset:0;z-index:10000;background:linear-gradient(135deg,#1e1b4b 0%,#312e81 52%,#831843 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
-  <div id="pgLoader__welcome">Welcome</div>
-  <div id="pgLoader__name">Kofi Ampomah</div>
-  <div id="pgLoader__sub">PhD Student in Computer Science &nbsp;·&nbsp; UA-SPECTRAL Lab</div>
-  <div id="pgLoader__bar"><div id="pgLoader__fill"></div></div>
-</div>
   
 
 
-<a class="skip-link" href="#home">Skip to main content</a>
-<div class="scroll-progress" id="scrollProgress"></div>
 <div class="wave-bg"></div>
 
-<button class="back-to-top" id="backToTop" aria-label="Back to top">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
 
-<!-- Internship availability popup -->
-<div class="hire-popup" id="hirePopup" role="dialog" aria-label="Internship availability">
-  <button class="hire-popup__close" id="hirePopupClose" aria-label="Close">
-    <i class="fa-solid fa-xmark"></i>
-  </button>
-  <div class="hire-popup__dot"></div>
-  <p class="hire-popup__eyebrow"><i class="fa-solid fa-microchip" style="margin-right:.3rem;font-size:.9em"></i> Open to Opportunities</p>
-  <p class="hire-popup__title">Seeking a<br><strong>Summer 2027 Research Internship</strong></p>
-  <p class="hire-popup__sub">Usable Security &amp; Privacy &nbsp;·&nbsp; HCI<br>Responsible AI &nbsp;·&nbsp; AI Policy &nbsp;·&nbsp; Available May 2027</p>
-  <a href="#contact" class="hire-popup__cta">Get in touch <i class="fa-solid fa-arrow-right" style="font-size:.62rem"></i></a>
-</div>
-
-
-<nav class="nav" role="navigation" aria-label="Primary navigation">
-  <a href="#home" class="nav__brand" aria-label="Kofi Ampomah — go to top">Kofi Ampomah</a>
-  <button class="dm-btn" id="dmBtn" title="Toggle dark mode" aria-label="Toggle dark mode">
-    <i class="fa-solid fa-moon"></i> Dark
-  </button>
+<nav class="nav">
   <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -475,50 +35,52 @@
     <a href="#skills"          class="nav__link">Skills</a>
     <a href="#research"        class="nav__link">Research</a>
     <a href="#publications"    class="nav__link">Publications</a>
-    <a href="#countries"       class="nav__link">Countries</a>
     <a href="#certifications"  class="nav__link">Certifications</a>
     <a href="#contact"         class="nav__link">Contact</a>
-    <button class="dm-btn-mobile" id="dmBtnMobile" aria-label="Toggle dark mode">
-      <i class="fa-solid fa-moon"></i> Toggle Dark Mode
-    </button>
   </div>
 </nav>
 
 
-<section id="home" class="hero-section" role="main" aria-label="Introduction">
+<section id="home" class="hero-section">
   <div class="hero-inner">
 
     
     <div class="hero-photo-wrap">
-      <img src="images/profile.jpg"
+      <img src="/my_personalphd_website/images/profile.jpg"
            alt="Kofi Ampomah"
            class="hero-photo"
-           onerror="this.closest('.hero-photo-wrap').style.display='none';">
+           onerror="this.style.display='none';document.getElementById('hero-fallback').style.display='flex';">
+      <div id="hero-fallback" class="hero-photo-fallback" style="display:none;">KA</div>
     </div>
 
     
     <div class="hero-content">
       <h1 class="hero-name">Kofi Ampomah</h1>
       <p class="hero-role">PhD Student &nbsp;·&nbsp; Computer Science</p>
-      <p class="hero-type" aria-label="Researcher roles"><span id="heroType" aria-live="polite" aria-atomic="true"></span><span class="hero-type__cursor" aria-hidden="true"></span></p>
       <p class="hero-inst">The University of Alabama, Tuscaloosa &nbsp;·&nbsp; Advisor: <a href="https://lenhattu.com/#about" target="_blank" rel="noopener" style="color:rgba(255,255,255,.75);text-decoration:underline;text-underline-offset:2px;font-weight:500;">Dr. Tu Le</a></p>
+
+      
+      <p style="font-size:.78rem;font-weight:600;letter-spacing:.6px;color:rgba(255,255,255,.55);margin-top:.55rem;margin-bottom:0;text-transform:uppercase;line-height:1.8;">
+        Usable Security &amp; Privacy &nbsp;·&nbsp; Human-Centered Security &nbsp;·&nbsp; Data Security &nbsp;·&nbsp; AI Policy &nbsp;·&nbsp; Cybersecurity
+      </p>
 
       <div class="hero-divider"></div>
 
       <p class="hero-bio">
-        I research how people experience AI risks — and how systems can be designed to be
-        <strong style="color:#fff;font-weight:600;">safe, human-centered, and accountable</strong>.
-        At the <strong style="color:#fff;font-weight:600;">UA-SPECTRAL Lab</strong>, my work spans
-        usable security &amp; privacy, human-centered computing, and the policy dimensions of emerging AI technologies.
+        My research sits at the intersection of <strong style="color:#fff;font-weight:600;">usable security &amp; privacy</strong>
+        and <strong style="color:#fff;font-weight:600;">human-centered security</strong> — building systems that are safe,
+        transparent, and accountable. I work on <strong style="color:#fff;font-weight:600;">data security</strong>,
+        <strong style="color:#fff;font-weight:600;">AI policy</strong>, adversarial machine learning, and exposing hidden
+        privacy risks in third-party bot ecosystems on social platforms.
       </p>
 
       <div class="hero-chips">
         <span class="hero-chip">Usable Security &amp; Privacy</span>
-        <span class="hero-chip">Human-Centered Computing</span>
-        <span class="hero-chip">Responsible AI</span>
+        <span class="hero-chip">Human-Centered Security</span>
+        <span class="hero-chip">Data Security</span>
         <span class="hero-chip">AI Policy</span>
+        <span class="hero-chip">Cybersecurity</span>
         <span class="hero-chip">Adversarial ML</span>
-        <span class="hero-chip">Trustworthy AI</span>
       </div>
 
       
@@ -541,14 +103,15 @@
       <div class="internship-banner">
         <div class="internship-banner__pulse"><span class="internship-dot"></span></div>
         <div class="internship-banner__text">
-          <p class="internship-banner__eyebrow"><i class="fa-solid fa-microchip" style="margin-right:.3rem;font-size:.9em"></i> Open to Opportunities</p>
-          <p class="internship-banner__main">Actively seeking a <strong>Summer 2027 Research Internship</strong> &mdash; Usable Security &amp; Privacy &nbsp;·&nbsp; Human-Computer Interaction &nbsp;·&nbsp; Responsible AI &nbsp;·&nbsp; AI Policy &nbsp;·&nbsp; Available May 2027</p>
+          <p class="internship-banner__eyebrow">🚀 Open to Opportunities</p>
+          <p class="internship-banner__main">Actively seeking a <strong>Summer 2027 Internship</strong> in AI / Security Research or Industry &mdash; available from May 2027</p>
         </div>
         <a href="#contact" class="internship-banner__cta">Get in touch &rarr;</a>
       </div>
 
       <div class="hero-btns">
-        <a href="Kofi_Ampomah_Resume.pdf" target="_blank" rel="noopener" class="btn btn--white"><i class="fa-solid fa-file-pdf" style="margin-right:.4rem;font-size:.8rem;"></i>View CV</a>
+        <a href="/my_personalphd_website/research-cv.pdf" download class="btn btn--white"><i class="fa-solid fa-flask" style="margin-right:.4rem;font-size:.8rem;"></i>Research CV</a>
+        <a href="/my_personalphd_website/job-cv.pdf" download class="btn btn--white"><i class="fa-solid fa-briefcase" style="margin-right:.4rem;font-size:.8rem;"></i>Job CV</a>
         <a href="#publications" class="btn btn--ghost"><i class="fa-solid fa-file-lines" style="margin-right:.4rem;font-size:.8rem;"></i>Publications</a>
         <a href="#contact"      class="btn btn--ghost"><i class="fa-solid fa-paper-plane" style="margin-right:.4rem;font-size:.8rem;"></i>Contact</a>
       </div>
@@ -565,14 +128,14 @@
 </section>
 
 
-<section id="about" aria-label="About Me" style="padding:4rem 0;position:relative;overflow:hidden;background:#f0f3ff;">
+<section id="about" style="padding:4rem 0;position:relative;overflow:hidden;background:#f0f3ff;">
   <div class="section-blob section-blob--indigo" style="width:320px;height:320px;top:-80px;right:-80px;"></div>
   <div class="section-blob section-blob--garnet" style="width:240px;height:240px;bottom:-60px;left:-60px;"></div>
   <div class="section" style="padding-top:0;padding-bottom:0;">
     <div class="section-head reveal">
       <span class="section-label">About Me</span>
       <h2 class="section-title">Background &amp; Interests</h2>
-      <p class="section-sub">An international student from Ghana pursuing a PhD in the USA — with research centred on <strong>security, privacy, and trustworthy AI</strong>.</p>
+      <p class="section-sub">An international student from Ghana pursuing a PhD in the USA — with research centred on <strong>usable security &amp; privacy</strong>, <strong>human-centered security</strong>, <strong>data security</strong>, <strong>AI policy</strong>, and <strong>cybersecurity</strong>.</p>
     </div>
 
     
@@ -581,11 +144,11 @@
         <div style="flex-shrink:0;font-size:1.5rem;line-height:1;padding-top:.1rem;">🌍✈️🇺🇸</div>
         <p style="font-size:.9375rem;line-height:1.95;color:#374151;">
           Born and raised in <strong style="color:#9e1b32;">Ghana</strong> (West Africa), I relocated to the
-          <strong style="color:#4338CA;">United States</strong> to pursue doctoral research at
-          The University of Alabama, Tuscaloosa. My path spans two continents —
-          a B.Sc. and M.Sc. from Ghana, and now a PhD at the
-          <strong style="color:#4338CA;">UA-SPECTRAL Lab</strong>, where I focus on keeping AI systems
-          safe, honest, and hard to exploit.
+          <strong style="color:#4338CA;">United States</strong> to pursue doctoral studies at
+          The University of Alabama, Tuscaloosa. My academic journey spans two continents and three institutions —
+          from <em>Ghana Communication Technology University</em> (B.Sc. Computer Engineering, First Class Honours, Accra) to
+          <em>University of Ghana</em> (M.Sc. Computer Science, Legon), and now to the
+          <em>UA-SPECTRAL Lab</em> (PhD, Tuscaloosa, AL) — where I focus on <strong style="color:#4338CA;">AI security, privacy, and adversarial robustness</strong>.
         </p>
       </div>
     </div>
@@ -593,19 +156,19 @@
     
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;margin-bottom:1.5rem;">
       <div class="card stat--primary reveal reveal-delay-1" style="padding:1.25rem;text-align:center;">
-        <p class="stat-num" data-target="3" data-suffix="" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#3730A3;line-height:1;">3</p>
+        <p style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#3730A3;line-height:1;">3</p>
         <p style="font-size:.75rem;color:#4338CA;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Degrees</p>
       </div>
       <div class="card stat--accent reveal reveal-delay-2" style="padding:1.25rem;text-align:center;">
-        <p class="stat-num" data-target="5" data-suffix="+" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#7a1325;line-height:1;">5+</p>
+        <p style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#7a1325;line-height:1;">5+</p>
         <p style="font-size:.75rem;color:#9e1b32;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Yrs Experience</p>
       </div>
       <div class="card stat--primary reveal reveal-delay-3" style="padding:1.25rem;text-align:center;">
-        <p class="stat-num" data-target="16" data-suffix="+" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#3730A3;line-height:1;">16+</p>
+        <p style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#3730A3;line-height:1;">45+</p>
         <p style="font-size:.75rem;color:#4338CA;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Certifications</p>
       </div>
       <div class="card stat--accent reveal reveal-delay-4" style="padding:1.25rem;text-align:center;">
-        <p class="stat-num" data-target="4" data-suffix="" style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#7a1325;line-height:1;">4</p>
+        <p style="font-family:'Roboto Slab',serif;font-size:1.85rem;font-weight:700;color:#7a1325;line-height:1;">4</p>
         <p style="font-size:.75rem;color:#9e1b32;margin-top:.35rem;font-weight:600;letter-spacing:.2px;">Countries</p>
       </div>
     </div>
@@ -646,7 +209,7 @@
             <p style="font-size:.85rem;color:#374151;margin-bottom:.15rem;">Master of Science (MS) · Computer Science</p>
             <p style="font-size:.78rem;color:#6b7280;margin-bottom:.3rem;">Oct 2023 – Aug 2024 &nbsp;·&nbsp; Legon, Ghana</p>
             
-            <span style="font-size:.72rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:#fce8ea;color:#7a1325;">Best ML with Big Data Analytics Student</span>
+            <span style="font-size:.72rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:#fce8ea;color:#7a1325;">Pass</span>
           </div>
         </div>
         
@@ -668,13 +231,72 @@
       </div>
     </div>
 
-    <div class="card reveal" style="padding:1.35rem 1.75rem;background:#0d1117;margin-top:1rem;">
-      <h3 style="font-family:'Roboto Slab',serif;font-size:1rem;font-weight:600;color:#58a6ff;margin-bottom:.2rem;display:flex;align-items:center;gap:.5rem;">
-        <i class="fa-brands fa-github"></i> GitHub Activity
-        <a href="https://github.com/Ampomah-Kofi" target="_blank" rel="noopener" style="font-size:.72rem;font-weight:500;color:rgba(88,166,255,.5);margin-left:auto;text-decoration:none;">@Ampomah-Kofi ↗</a>
-      </h3>
-      <p style="font-size:.68rem;color:rgba(88,166,255,.38);margin-bottom:.65rem;font-family:'Roboto Mono',monospace;letter-spacing:.8px;">CONTRIBUTION GRAPH · LAST 12 MONTHS</p>
-      <img src="https://ghchart.rshah.org/4338CA/Ampomah-Kofi" alt="GitHub contribution graph" style="width:100%;display:block;border-radius:6px;background:#161b22;padding:.35rem;" onerror="this.closest('.card').style.display='none'">
+    
+    <div class="card reveal" style="padding:1.75rem 2rem;background:linear-gradient(160deg,#fff8f8 0%,#fff5f5 100%);">
+      <h3 style="font-family:'Roboto Slab',serif;font-size:1.15rem;font-weight:600;color:#4338CA;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;"><i class="fa-solid fa-brain icon-pulse"></i> Research Interests</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.85rem;">
+        
+        <div class="interest-item">
+          <div class="interest-item__icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div>
+            <p style="font-size:.875rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;">Usable Security &amp; Privacy</p>
+            <p style="font-size:.8rem;color:#6b7280;line-height:1.55;margin:0;">Designing security and privacy systems that people can actually understand and use.</p>
+          </div>
+        </div>
+        
+        <div class="interest-item">
+          <div class="interest-item__icon">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <div>
+            <p style="font-size:.875rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;">Human-Centered Security</p>
+            <p style="font-size:.8rem;color:#6b7280;line-height:1.55;margin:0;">How people perceive, interact with, and respond to security mechanisms in practice.</p>
+          </div>
+        </div>
+        
+        <div class="interest-item">
+          <div class="interest-item__icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div>
+            <p style="font-size:.875rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;">Data Security</p>
+            <p style="font-size:.8rem;color:#6b7280;line-height:1.55;margin:0;">Protecting data integrity, confidentiality, and availability in AI-driven systems.</p>
+          </div>
+        </div>
+        
+        <div class="interest-item">
+          <div class="interest-item__icon">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div>
+            <p style="font-size:.875rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;">AI Policy &amp; Governance</p>
+            <p style="font-size:.8rem;color:#6b7280;line-height:1.55;margin:0;">Responsible AI regulation, ethics frameworks, and governance of emerging AI systems.</p>
+          </div>
+        </div>
+        
+        <div class="interest-item">
+          <div class="interest-item__icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <p style="font-size:.875rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;">Cybersecurity</p>
+            <p style="font-size:.8rem;color:#6b7280;line-height:1.55;margin:0;">Threat modeling, adversarial ML, and defense of real-world systems against attacks.</p>
+          </div>
+        </div>
+        
+        <div class="interest-item">
+          <div class="interest-item__icon">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div>
+            <p style="font-size:.875rem;font-weight:600;color:#1e1b4b;margin-bottom:.15rem;">Third-Party Bot Ecosystems</p>
+            <p style="font-size:.8rem;color:#6b7280;line-height:1.55;margin:0;">Privacy risks in community bots on social platforms.</p>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </div>
 </section>
@@ -709,8 +331,24 @@
         <div class="news-item">
           <span class="news-badge">2024</span>
           <div class="news-body">
-            <p class="news-title"><i class="fa-solid fa-book-open" style="color:#9e1b32;margin-right:.45rem;"></i>First Paper Published</p>
+            <p class="news-title"><i class="fa-solid fa-book-open" style="color:#db2777;margin-right:.45rem;"></i>First Paper Published</p>
             <p class="news-sub">Published <em>"Design and Implementation of Coconut Maturity Prediction System Based on Naïve Bayes Classification Algorithm Using Arduino and a Sound Sensor"</em> — IJISRT, 9(1), 2024.</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <span class="news-badge">2024</span>
+          <div class="news-body">
+            <p class="news-title"><i class="fa-solid fa-circle-check" style="color:#4338CA;margin-right:.45rem;"></i>Completed M.Sc. at University of Ghana</p>
+            <p class="news-sub">Graduated with an M.Sc. in Computer Science from the University of Ghana, Legon.</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <span class="news-badge">2022</span>
+          <div class="news-body">
+            <p class="news-title"><i class="fa-solid fa-trophy" style="color:#9e1b32;margin-right:.45rem;"></i>First Class Honours — GCTU</p>
+            <p class="news-sub">Graduated with First Class Honours in B.Sc. Computer Engineering from Ghana Communication Technology University, Accra.</p>
           </div>
         </div>
 
@@ -728,12 +366,12 @@
       <p class="section-sub">Academic distinctions and institutional recognition earned across my studies and research career.</p>
     </div>
     
-    <div class="card reveal" style="padding:.85rem 1.4rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:1rem;background:linear-gradient(135deg,#3730A3,#7a1325);overflow:hidden;position:relative;">
+    <div class="card reveal" style="padding:.85rem 1.4rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:1rem;background:linear-gradient(135deg,#3730A3,#be185d);overflow:hidden;position:relative;">
       <div style="position:absolute;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.06);top:-30px;right:60px;pointer-events:none;"></div>
       <div style="width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.3rem;">Π</div>
       <div>
-        <p style="font-size:.9rem;font-weight:700;color:#fff;margin-bottom:.1rem;">Upsilon Pi Epsilon (UPE) — Computer Science Honor Society</p>
-        <p style="font-size:.78rem;color:rgba(255,255,255,.72);margin:0;">Active member · International CS Honor Society</p>
+        <p style="font-size:.9rem;font-weight:700;color:#fff;margin-bottom:.1rem;">Pi Epsilon Pi — Computer Science Honor Society</p>
+        <p style="font-size:.78rem;color:rgba(255,255,255,.72);margin:0;">Active member · UCS Honor Society</p>
       </div>
       <span style="margin-left:auto;font-size:.68rem;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.85);background:rgba(255,255,255,.15);padding:.22rem .7rem;border-radius:20px;white-space:nowrap;flex-shrink:0;">Current</span>
     </div>
@@ -742,7 +380,7 @@
     <div class="awards-grid reveal" style="margin-bottom:1.5rem;">
 
       <div class="award-card">
-        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#db2777,#be185d);">
           <i class="fa-solid fa-star"></i>
         </div>
         <div class="award-card__body">
@@ -764,7 +402,7 @@
       </div>
 
       <div class="award-card">
-        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#4338CA);">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#db2777,#4338CA);">
           <i class="fa-solid fa-lightbulb"></i>
         </div>
         <div class="award-card__body">
@@ -786,7 +424,7 @@
       </div>
 
       <div class="award-card">
-        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#db2777,#be185d);">
           <i class="fa-solid fa-trophy"></i>
         </div>
         <div class="award-card__body">
@@ -802,7 +440,7 @@
     <div class="awards-grid reveal">
 
       <div class="award-card">
-        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#9e1b32);">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#db2777);">
           <i class="fa-solid fa-graduation-cap"></i>
         </div>
         <div class="award-card__body">
@@ -824,7 +462,7 @@
       </div>
 
       <div class="award-card">
-        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#db2777,#be185d);">
           <i class="fa-solid fa-school"></i>
         </div>
         <div class="award-card__body">
@@ -835,7 +473,7 @@
       </div>
 
       <div class="award-card">
-        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#9e1b32);">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#4338CA,#db2777);">
           <i class="fa-solid fa-gem"></i>
         </div>
         <div class="award-card__body">
@@ -846,7 +484,7 @@
       </div>
 
       <div class="award-card">
-        <div class="award-card__icon" style="background:linear-gradient(135deg,#9e1b32,#7a1325);">
+        <div class="award-card__icon" style="background:linear-gradient(135deg,#db2777,#be185d);">
           <i class="fa-solid fa-gem"></i>
         </div>
         <div class="award-card__body">
@@ -889,11 +527,9 @@
             <p style="font-size:.77rem;color:#9ca3af;margin-bottom:.6rem;">Tuscaloosa, Alabama, USA</p>
             <ul style="display:flex;flex-direction:column;gap:.3rem;">
               <li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
-                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Designed BotLens, a privacy auditing framework analyzing 183,142 reviews across 23,000 Discord bots.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
-                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Trained DeBERTa-v3-large on a 33-concept security and privacy taxonomy, reaching F1 of 0.94 with 30% labeling.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
-                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Built end-to-end Python pipeline integrating Playwright scraping, Ollama llama3:8b distillation, and RTX 5090 inference.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
-                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Co-authored adversarial transferability study across 7 attacks, CNN and ViT models, and 3,500 configurations.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
-                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Led CS 438/538 Computer Networks labs under Prof. Yang Xiao (IEEE Fellow): TCP/IP, DNS, HTTP, Wireshark.</li>
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Teaching Assistant for CS 438 (Computer Networks) — labs on TCP/IP, DNS, HTTP, Wireshark.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Graduate Research Assistant: privacy, security, and human-centered AI.</li><li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
+                <span style="position:absolute;left:0;top:.45rem;width:5px;height:5px;border-radius:50%;background:#4338CA;display:block;"></span>Python for data analysis, ML experiments, and automation pipelines (PyAutoGUI).</li>
             </ul>
           </div>
         </div>
@@ -950,19 +586,19 @@
 
         
 
-        <div class="reveal" style="display:flex;gap:1.25rem;align-items:flex-start;padding:.9rem 1rem;margin-bottom:.6rem;border-radius:10px;background:#9e1b3212;">
+        <div class="reveal" style="display:flex;gap:1.25rem;align-items:flex-start;padding:.9rem 1rem;margin-bottom:.6rem;border-radius:10px;background:#db277712;">
           <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
-            <div style="width:38px;height:38px;border-radius:10px;background:#9e1b3218;border:1.5px solid #9e1b3233;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <i class="fa-solid fa-chalkboard-user" style="color:#9e1b32;font-size:.9rem;"></i>
+            <div style="width:38px;height:38px;border-radius:10px;background:#db277718;border:1.5px solid #db277733;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <i class="fa-solid fa-chalkboard-user" style="color:#db2777;font-size:.9rem;"></i>
             </div>
-            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#9e1b3222,transparent);margin-top:.4rem;min-height:20px;"></div>
+            <div style="width:2px;flex:1;background:linear-gradient(to bottom,#db277722,transparent);margin-top:.4rem;min-height:20px;"></div>
           </div>
           <div style="flex:1;min-width:0;">
             <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.25rem;margin-bottom:.25rem;">
               <p style="font-size:.93rem;font-weight:600;color:#1e1b4b;">Teaching Assistant &amp; Data Analyst</p>
               <span style="font-size:.75rem;color:#6b7280;white-space:nowrap;">Jan 2022 – Sep 2023</span>
             </div>
-            <p style="font-size:.82rem;font-weight:500;color:#9e1b32;margin-bottom:.1rem;">GCTU — Dept. of Computer Engineering</p>
+            <p style="font-size:.82rem;font-weight:500;color:#db2777;margin-bottom:.1rem;">GCTU — Dept. of Computer Engineering</p>
             <p style="font-size:.77rem;color:#9ca3af;margin-bottom:.6rem;">Accra, Ghana</p>
             <ul style="display:flex;flex-direction:column;gap:.3rem;">
               <li style="font-size:.83rem;color:#6b7280;line-height:1.55;padding-left:1rem;position:relative;">
@@ -1016,11 +652,12 @@
     <div class="skills-grid">
 
       <div class="card skill-card reveal">
-        <div class="skill-card__head"><i class="fa-solid fa-code"></i> Languages</div>
+        <div class="skill-card__head"><i class="fa-solid fa-code"></i> Programming</div>
         <div class="skill-badges">
           <span class="skill-badge">Python</span>
           <span class="skill-badge">JavaScript</span>
           <span class="skill-badge">SQL</span>
+          <span class="skill-badge">Bash</span>
           <span class="skill-badge">LaTeX</span>
           <span class="skill-badge">HTML / CSS</span>
           <span class="skill-badge">MATLAB</span>
@@ -1028,34 +665,62 @@
       </div>
 
       <div class="card skill-card reveal reveal-delay-1">
-        <div class="skill-card__head"><i class="fa-solid fa-brain"></i> ML / AI &amp; Security</div>
+        <div class="skill-card__head"><i class="fa-solid fa-brain"></i> ML &amp; AI</div>
         <div class="skill-badges">
           <span class="skill-badge">PyTorch</span>
           <span class="skill-badge">TensorFlow</span>
           <span class="skill-badge">Scikit-learn</span>
           <span class="skill-badge">Hugging Face</span>
+          <span class="skill-badge">NumPy</span>
           <span class="skill-badge">Pandas</span>
           <span class="skill-badge">OpenCV</span>
-          <span class="skill-badge">DeBERTa / Transformers</span>
-          <span class="skill-badge">CNN / ViT</span>
-          <span class="skill-badge">Adversarial ML</span>
-          <span class="skill-badge">Threat Modeling</span>
         </div>
       </div>
 
-      <div class="card skill-card reveal reveal-delay-2 skill-card--agents">
-        <div class="skill-card__head"><i class="fa-solid fa-robot"></i> LLMs, Agents &amp; Tools</div>
+      <div class="card skill-card reveal reveal-delay-2">
+        <div class="skill-card__head"><i class="fa-solid fa-shield-halved"></i> Security &amp; Privacy</div>
+        <div class="skill-badges">
+          <span class="skill-badge">Adversarial ML</span>
+          <span class="skill-badge">FGSM / PGD</span>
+          <span class="skill-badge">Differential Privacy</span>
+          <span class="skill-badge">Threat Modeling</span>
+          <span class="skill-badge">Bot Detection</span>
+          <span class="skill-badge">Privacy Analysis</span>
+        </div>
+      </div>
+
+      <div class="card skill-card reveal reveal-delay-3">
+        <div class="skill-card__head"><i class="fa-solid fa-wrench"></i> Tools &amp; Platforms</div>
+        <div class="skill-badges">
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">Linux</span>
+          <span class="skill-badge">Docker</span>
+          <span class="skill-badge">Jupyter</span>
+          <span class="skill-badge">Google Colab</span>
+          <span class="skill-badge">VS Code</span>
+          <span class="skill-badge">HPC / Slurm</span>
+        </div>
+      </div>
+
+      <div class="card skill-card reveal skill-card--agents">
+        <div class="skill-card__head"><i class="fa-solid fa-robot"></i> AI Agents, LLMs &amp; MCP <span class="skill-proficient">Proficient</span></div>
         <div class="skill-badges">
           <span class="skill-badge skill-badge--accent">LangChain</span>
           <span class="skill-badge skill-badge--accent">LangGraph</span>
           <span class="skill-badge skill-badge--accent">AutoGen</span>
-          <span class="skill-badge skill-badge--accent">MCP</span>
-          <span class="skill-badge skill-badge--accent">Claude API</span>
+          <span class="skill-badge skill-badge--accent">CrewAI</span>
+          <span class="skill-badge skill-badge--accent">MCP (Model Context Protocol)</span>
+          <span class="skill-badge skill-badge--accent">Claude API (Anthropic)</span>
+          <span class="skill-badge skill-badge--accent">ChatGPT / GPT-4o</span>
+          <span class="skill-badge skill-badge--accent">Gemini API</span>
+          <span class="skill-badge skill-badge--accent">OpenAI Agents SDK</span>
+          <span class="skill-badge skill-badge--accent">LlamaIndex</span>
+          <span class="skill-badge skill-badge--accent">RAG Pipelines</span>
+          <span class="skill-badge skill-badge--accent">ChromaDB / FAISS</span>
+          <span class="skill-badge skill-badge--accent">Cursor AI</span>
+          <span class="skill-badge skill-badge--accent">GitHub Copilot</span>
           <span class="skill-badge skill-badge--accent">Ollama</span>
-          <span class="skill-badge skill-badge--accent">RAG</span>
-          <span class="skill-badge skill-badge--accent">Playwright</span>
-          <span class="skill-badge skill-badge--accent">Git</span>
-          <span class="skill-badge skill-badge--accent">Docker</span>
+          <span class="skill-badge skill-badge--accent">Prompt Engineering</span>
         </div>
       </div>
 
@@ -1064,17 +729,17 @@
 </section>
 
 
-<section id="research" aria-label="Research Projects" style="padding:4rem 0;position:relative;overflow:hidden;background:#fff5f5;">
+<section id="research" style="padding:4rem 0;position:relative;overflow:hidden;background:#fff5f5;">
   <div class="section-blob section-blob--garnet" style="width:300px;height:300px;top:-60px;left:-80px;"></div>
   <div class="section-blob section-blob--indigo" style="width:200px;height:200px;bottom:-40px;right:-40px;"></div>
   <div class="section" style="padding-top:0;padding-bottom:0;">
     <div class="section-head reveal">
       <span class="section-label">Research</span>
       <h2 class="section-title">Active Projects</h2>
-      <p class="section-sub">Building privacy-preserving, secure, and trustworthy AI systems — with a focus on understanding and defending against real-world threats.</p>
+      <p class="section-sub">Building systems grounded in <strong>usable security &amp; privacy</strong>, <strong>human-centered security</strong>, <strong>data security</strong>, and <strong>AI policy</strong> — with a focus on understanding and defending against real-world cybersecurity threats.</p>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:1rem;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:1rem;">
 
     
     <div class="card reveal reveal-delay-1" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#1e1b4b 0%,#312e81 40%,#3730A3 75%,#4338CA 100%);">
@@ -1093,34 +758,16 @@
           <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Analysis of permission scopes and data-access patterns</li>
           <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Frameworks for communicating privacy risks to non-expert users</li>
         </ul>
-        <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.65rem;">
-          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Usable Security &amp; Privacy</span>
+        <div style="display:flex;flex-wrap:wrap;gap:.35rem;">
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Usable Privacy</span>
           <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Bot Ecosystems</span>
           <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Security Auditing</span>
-          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">NLP</span>
-        </div>
-        <div style="border-top:1px solid rgba(255,255,255,.12);padding-top:.55rem;">
-          <p style="font-size:.6rem;font-weight:700;letter-spacing:1px;color:rgba(255,255,255,.42);text-transform:uppercase;margin-bottom:.35rem;">Tech Stack</p>
-          <div style="display:flex;flex-wrap:wrap;gap:.3rem;">
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Python</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Playwright</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">DeBERTa-v3-large</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Hugging Face</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Ollama llama3:8b</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">PyTorch</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Pandas</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">RTX 5090</span>
-          </div>
-        </div>
-        <div style="margin-top:.75rem;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.1);">
-          <a href="https://github.com/ua-spectral/Third-Party-Community-Bots-Project" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.38rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.22);padding:.32rem .9rem;border-radius:8px;text-decoration:none;background:rgba(255,255,255,.08);">
-            <i class="fa-brands fa-github"></i> GitHub (Private · Under Review) ↗
-          </a>
+          <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Social Platforms</span>
         </div>
       </div>
     </div>
 
-
+    
     <div class="card reveal reveal-delay-2" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#3b0010 0%,#5c0e1e 38%,#7a1325 70%,#9e1b32 100%);">
       <div style="position:absolute;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.05);top:-40px;left:-40px;pointer-events:none;"></div>
       <div style="padding:1.4rem 1.6rem;position:relative;">
@@ -1137,31 +784,11 @@
           <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Analysis of transferability patterns across model architectures</li>
           <li style="font-size:.81rem;color:rgba(255,255,255,.72);line-height:1.5;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;top:.52rem;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5);display:block;"></span>Robustness standards for trustworthy medical AI deployment</li>
         </ul>
-        <div style="display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.65rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:.35rem;">
           <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Adversarial ML</span>
           <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Medical AI</span>
           <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Trustworthy AI</span>
           <span style="font-size:.68rem;font-weight:600;padding:.18rem .65rem;border-radius:20px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.2);">Robustness</span>
-        </div>
-        <div style="border-top:1px solid rgba(255,255,255,.12);padding-top:.55rem;">
-          <p style="font-size:.6rem;font-weight:700;letter-spacing:1px;color:rgba(255,255,255,.42);text-transform:uppercase;margin-bottom:.35rem;">Tech Stack</p>
-          <div style="display:flex;flex-wrap:wrap;gap:.3rem;">
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">PyTorch</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">TensorFlow</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">CNN &amp; ViT</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">FGSM / PGD / CW</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">OpenCV</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">Scikit-learn</span>
-            <span style="font-size:.65rem;font-weight:500;padding:.14rem .55rem;border-radius:20px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font-family:'Roboto Mono',monospace;">7 Attacks · 3,500 Configs</span>
-          </div>
-        </div>
-        <div style="margin-top:.75rem;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.1);display:flex;gap:.55rem;flex-wrap:wrap;">
-          <a href="https://arxiv.org/abs/2604.16532" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.38rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.22);padding:.32rem .9rem;border-radius:8px;text-decoration:none;background:rgba(255,255,255,.08);">
-            <i class="fa-solid fa-file-lines"></i> arXiv ↗
-          </a>
-          <a href="https://osf.io/4grsd/overview?view_only=c6246a2f9ea34a39a557da080c95ebed" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.38rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.22);padding:.32rem .9rem;border-radius:8px;text-decoration:none;background:rgba(255,255,255,.08);">
-            <i class="fa-solid fa-database"></i> OSF Preprint ↗
-          </a>
         </div>
       </div>
     </div>
@@ -1188,15 +815,15 @@
     
     <div class="scholar-metrics reveal" style="margin-bottom:1.5rem;">
       <div class="scholar-stat">
-        <p class="scholar-stat__num">1</p>
+        <p class="scholar-stat__num">2</p>
         <p class="scholar-stat__label"><i class="fa-solid fa-book-open"></i> Published</p>
       </div>
       <div class="scholar-stat scholar-stat--review">
-        <p class="scholar-stat__num">1</p>
+        <p class="scholar-stat__num">2</p>
         <p class="scholar-stat__label"><i class="fa-solid fa-hourglass-half"></i> Under Review</p>
       </div>
       <div class="scholar-stat">
-        <p class="scholar-stat__num">5</p>
+        <p class="scholar-stat__num">2</p>
         <p class="scholar-stat__label"><i class="fa-solid fa-users"></i> Co-authors</p>
       </div>
       <a href="https://scholar.google.com/citations?user=4Z_7x2EAAAAJ&hl=en" target="_blank" rel="noopener" class="scholar-stat scholar-stat--link">
@@ -1296,7 +923,7 @@
     <div class="section-head reveal">
       <span class="section-label"><i class="fa-solid fa-certificate icon-bounce" style="margin-right:.4rem;"></i>Certifications</span>
       <h2 class="section-title">Professional Certificates</h2>
-      <p class="section-sub">16+ verified Credly badges — IBM Data Science, IBM ML, Google IT Support, Google Project Management, and more.</p>
+      <p class="section-sub">45+ certificates spanning AI, data science, cybersecurity, project management, and digital marketing.</p>
     </div>
 
     
@@ -1306,7 +933,7 @@
       <a href="https://www.credly.com/users/ampomahkofi" target="_blank" rel="noopener" class="btn btn--white" style="font-size:.82rem;padding:.45rem 1.2rem;">Open Credly ↗</a>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:1rem;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:1rem;">
 
       
       <div class="card reveal reveal-delay-1" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#1e1b4b 0%,#312e81 40%,#4338CA 100%);padding:1.5rem 1.75rem;">
@@ -1482,8 +1109,8 @@
         </ul>
       </div>
 
-      <!-- Meta and miscellaneous certs omitted for focus — view all on Credly -->
-      <div class="card reveal reveal-delay-1" style="overflow:hidden;position:relative;display:none;background:linear-gradient(145deg,#312e81 0%,#3730A3 45%,#4338CA 100%);padding:1.5rem 1.75rem;">
+      
+      <div class="card reveal reveal-delay-1" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#312e81 0%,#3730A3 45%,#4338CA 100%);padding:1.5rem 1.75rem;">
         <div style="position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.06);top:-35px;right:-35px;pointer-events:none;"></div>
         <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.25rem;position:relative;">
           <div style="width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -1525,7 +1152,7 @@
       </div>
 
       
-      <div class="card reveal reveal-delay-2" style="overflow:hidden;position:relative;display:none;background:linear-gradient(145deg,#5c0e1e 0%,#7a1325 45%,#9e1b32 100%);padding:1.5rem 1.75rem;">
+      <div class="card reveal reveal-delay-2" style="overflow:hidden;position:relative;background:linear-gradient(145deg,#5c0e1e 0%,#7a1325 45%,#9e1b32 100%);padding:1.5rem 1.75rem;">
         <div style="position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.06);top:-35px;right:-35px;pointer-events:none;"></div>
         <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1.25rem;position:relative;">
           <div style="width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -1606,7 +1233,7 @@
 </section>
 
 
-<section id="contact" aria-label="Contact" style="padding:4rem 0;position:relative;overflow:hidden;background:#f0f3ff;">
+<section id="contact" style="padding:4rem 0;position:relative;overflow:hidden;background:#f0f3ff;">
   <div class="section" style="padding-top:0;padding-bottom:0;">
     <div class="section-head">
       <span class="section-label">Contact</span>
@@ -1656,79 +1283,30 @@
 </section>
 
 
-<!-- Section dot navigator (auto-populated by JS) -->
-<nav class="section-nav" id="sectionNav" aria-label="Page sections"></nav>
-
-<!-- CV Preview Modal -->
-<div class="cv-modal" id="cvModal" role="dialog" aria-modal="true" aria-label="CV Preview">
-  <div class="cv-modal__bd" id="cvModalBd"></div>
-  <div class="cv-modal__box">
-    <div class="cv-modal__head">
-      <p class="cv-modal__title" id="cvModalTitle">CV Preview</p>
-      <button class="cv-modal__close" id="cvModalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <iframe class="cv-modal__frame" id="cvModalFrame" src="" title="CV Preview"></iframe>
-    <div class="cv-modal__foot">
-      <span class="cv-modal__note">If preview doesn't load, use the download button →</span>
-      <a class="cv-modal__dl" id="cvModalDl" href="#" download><i class="fa-solid fa-download"></i> Download PDF</a>
-    </div>
+<div class="clock-widget" id="clockWidget">
+  <div class="clock-widget__label">LIVE</div>
+  <div class="clock-widget__time">
+    <span id="clockH">00</span><span class="clock-colon">:</span><span id="clockM">00</span><span class="clock-colon">:</span><span id="clockS">00</span>
   </div>
+  <div class="clock-widget__date" id="clockDate">Loading…</div>
 </div>
 
 <script>
 (function () {
-  /* ── Page loader ── */
-  var pgLoader = document.getElementById('pgLoader');
-  function hideLoader() {
-    if (pgLoader) { pgLoader.classList.add('hide'); setTimeout(function(){ pgLoader.remove(); }, 600); }
+   
+  var days   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function tick() {
+    var n = new Date();
+    document.getElementById('clockH').textContent = String(n.getHours()).padStart(2,'0');
+    document.getElementById('clockM').textContent = String(n.getMinutes()).padStart(2,'0');
+    document.getElementById('clockS').textContent = String(n.getSeconds()).padStart(2,'0');
+    document.getElementById('clockDate').textContent = days[n.getDay()] + ' · ' + months[n.getMonth()] + ' ' + n.getDate() + ' ' + n.getFullYear();
   }
-  window.addEventListener('load', function () { setTimeout(hideLoader, 1800); });
-  setTimeout(hideLoader, 5000);
+  tick();
+  setInterval(tick, 1000);
 
-  /* ── Dark mode ── */
-  var dmBtn       = document.getElementById('dmBtn');
-  var dmBtnMobile = document.getElementById('dmBtnMobile');
-  var html        = document.documentElement;
-  function setDark(on) {
-    html.classList.toggle('dark', on);
-    try { localStorage.setItem('dm', on ? '1' : '0'); } catch(e) {}
-    var icon  = on ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-    if (dmBtn)       dmBtn.innerHTML       = icon + (on ? ' Light' : ' Dark');
-    if (dmBtnMobile) dmBtnMobile.innerHTML = icon + ' Toggle Dark Mode';
-  }
-  try { if (localStorage.getItem('dm') === '1') setDark(true); } catch(e) {}
-  if (dmBtn)       dmBtn.addEventListener('click',       function () { setDark(!html.classList.contains('dark')); });
-  if (dmBtnMobile) dmBtnMobile.addEventListener('click', function () { setDark(!html.classList.contains('dark')); });
-
-  /* ── Typing animation ── */
-  var typeEl = document.getElementById('heroType');
-  if (typeEl) {
-    var phrases = [
-      'Adversarial ML Researcher',
-      'Usable Security & Privacy',
-      'AI Security Researcher',
-      'Human-Centered Computing',
-      'Trustworthy AI Builder',
-      'PhD · UA-SPECTRAL Lab'
-    ];
-    var pi = 0, ci = 0, del = false, wait = 0;
-    function typeStep() {
-      if (wait > 0) { wait--; setTimeout(typeStep, 80); return; }
-      var p = phrases[pi];
-      if (!del) {
-        typeEl.textContent = p.slice(0, ++ci);
-        if (ci >= p.length) { del = true; wait = 22; }
-        setTimeout(typeStep, 65);
-      } else {
-        typeEl.textContent = p.slice(0, --ci);
-        if (ci <= 0) { del = false; pi = (pi + 1) % phrases.length; wait = 4; }
-        setTimeout(typeStep, 30);
-      }
-    }
-    typeStep();
-  }
-
-  /* ── Reveal on scroll ── */
+   
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
@@ -1736,7 +1314,7 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
 
-  /* ── Nav hamburger ── */
+   
   var toggle = document.getElementById('navToggle');
   var links  = document.getElementById('navLinks');
   if (toggle && links) {
@@ -1747,92 +1325,7 @@
     });
   }
 
-  /* ── Hire popup — slides in after 1.8 s ── */
-  var hirePopup = document.getElementById('hirePopup');
-  var hireClose = document.getElementById('hirePopupClose');
-  function dismissHirePopup() {
-    if (!hirePopup) return;
-    hirePopup.style.transform = 'translateY(140%)';
-    hirePopup.style.opacity   = '0';
-    setTimeout(function () { hirePopup.style.display = 'none'; }, 520);
-  }
-  if (hirePopup) setTimeout(function () { hirePopup.classList.add('visible'); }, 1800);
-  if (hireClose) hireClose.addEventListener('click', dismissHirePopup);
-  if (hirePopup) {
-    var hireCta = hirePopup.querySelector('.hire-popup__cta');
-    if (hireCta) hireCta.addEventListener('click', dismissHirePopup);
-  }
-
-  /* ── CV Preview Modal ── */
-  var cvModal      = document.getElementById('cvModal');
-  var cvModalBd    = document.getElementById('cvModalBd');
-  var cvModalClose = document.getElementById('cvModalClose');
-  var cvModalFrame = document.getElementById('cvModalFrame');
-  var cvModalTitle = document.getElementById('cvModalTitle');
-  var cvModalDl    = document.getElementById('cvModalDl');
-  function openCvModal(src, title) {
-    if (!cvModal) return;
-    if (cvModalTitle) cvModalTitle.textContent = title || 'CV Preview';
-    if (cvModalFrame) cvModalFrame.src = src;
-    if (cvModalDl)  { cvModalDl.href = src; cvModalDl.download = (title || 'cv').replace(/\s+/g,'-').toLowerCase() + '.pdf'; }
-    cvModal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeCvModal() {
-    if (!cvModal) return;
-    cvModal.classList.remove('open');
-    document.body.style.overflow = '';
-    setTimeout(function () { if (cvModalFrame) cvModalFrame.src = ''; }, 350);
-  }
-  if (cvModalBd)    cvModalBd.addEventListener('click', closeCvModal);
-  if (cvModalClose) cvModalClose.addEventListener('click', closeCvModal);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeCvModal(); });
-  document.querySelectorAll('[data-cv]').forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      openCvModal(btn.dataset.src || btn.getAttribute('href') || '', btn.dataset.cv);
-    });
-  });
-
-  /* ── Generic show-more helper ── */
-  function makeShowMore(items, limit, insertAfterEl, dark) {
-    if (items.length <= limit) return;
-    items.slice(limit).forEach(function (el) {
-      el._smSaved = el.style.display;
-      el.style.display = 'none';
-    });
-    var remaining = items.length - limit;
-    var btn = document.createElement('button');
-    btn.className = 'show-more-btn' + (dark ? ' show-more-btn--dark' : '');
-    btn.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more';
-    var expanded = false;
-    btn.addEventListener('click', function () {
-      expanded = !expanded;
-      items.slice(limit).forEach(function (el) {
-        el.style.display = expanded ? (el._smSaved || '') : 'none';
-      });
-      btn.classList.toggle('expanded', expanded);
-      btn.innerHTML = expanded
-        ? '<i class="fa-solid fa-chevron-up"></i> Show fewer'
-        : '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more';
-    });
-    insertAfterEl.parentNode.insertBefore(btn, insertAfterEl.nextSibling);
-  }
-
-  /* ── News show-more ── */
-  var newsList = document.querySelector('#news .news-list');
-  if (newsList) makeShowMore(Array.prototype.slice.call(newsList.querySelectorAll('.news-item')), 3, newsList, false);
-
-  /* ── Awards show-more ── */
-  document.querySelectorAll('#awards .awards-grid').forEach(function (grid) {
-    makeShowMore(Array.prototype.slice.call(grid.querySelectorAll('.award-card')), 3, grid, false);
-  });
-
-  /* ── Experience show-more ── */
-  var expContainer = document.querySelector('#experience .card > div');
-  if (expContainer) makeShowMore(Array.prototype.slice.call(expContainer.children), 3, expContainer, false);
-
-  /* ── Certifications show-more ── */
+   
   var certSection = document.getElementById('certifications');
   if (certSection) {
     certSection.querySelectorAll('ul').forEach(function (ul) {
@@ -1840,111 +1333,26 @@
       var LIMIT = 6;
       if (items.length <= LIMIT) return;
       items.slice(LIMIT).forEach(function (li) { li.style.display = 'none'; });
-      var remaining = items.length - LIMIT;
       var btn = document.createElement('button');
-      btn.className = 'show-more-btn show-more-btn--dark';
-      btn.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more certificates';
+      btn.className = 'cert-show-more';
+      btn.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Show all ' + items.length + ' certificates';
       var expanded = false;
       btn.addEventListener('click', function () {
         expanded = !expanded;
         items.slice(LIMIT).forEach(function (li) { li.style.display = expanded ? 'flex' : 'none'; });
-        btn.classList.toggle('expanded', expanded);
         btn.innerHTML = expanded
           ? '<i class="fa-solid fa-chevron-up"></i> Show fewer'
-          : '<i class="fa-solid fa-chevron-down"></i> Show ' + remaining + ' more certificates';
+          : '<i class="fa-solid fa-chevron-down"></i> Show all ' + items.length + ' certificates';
       });
       ul.parentNode.insertBefore(btn, ul.nextSibling);
     });
   }
 
-  /* ── Section dot navigator (auto-built from all section[id] elements) ── */
-  var snavEl   = document.getElementById('sectionNav');
-  var snBtns   = [];
-  var snLabels = {
-    home:'Home', about:'About', news:'News', awards:'Awards',
-    experience:'Experience', teaching:'Teaching', skills:'Skills',
-    research:'Research', publications:'Publications', talks:'Talks',
-    countries:'Countries', certifications:'Certs', resources:'Resources',
-    contact:'Contact'
-  };
-  if (snavEl) {
-    Array.prototype.slice.call(document.querySelectorAll('section[id]')).forEach(function (sec) {
-      var btn   = document.createElement('button');
-      btn.className    = 'sn-item';
-      btn.dataset.secId = sec.id;
-      btn.setAttribute('aria-label', 'Go to ' + (snLabels[sec.id] || sec.id));
-      var label = document.createElement('span');
-      label.className  = 'sn-label';
-      label.textContent = snLabels[sec.id] || sec.id.charAt(0).toUpperCase() + sec.id.slice(1);
-      var dot   = document.createElement('span');
-      dot.className = 'sn-dot';
-      btn.appendChild(label);
-      btn.appendChild(dot);
-      snavEl.appendChild(btn);
-      snBtns.push(btn);
-      btn.addEventListener('click', function () {
-        sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-  }
-
-  /* ── Scroll: progress bar + back-to-top + scrollspy + section-nav ── */
-  var progBar  = document.getElementById('scrollProgress');
-  var bttBtn   = document.getElementById('backToTop');
-  var spyLinks = Array.prototype.slice.call(document.querySelectorAll('.nav__link[href^="#"]'));
-  var spySecs  = spyLinks.map(function (a) {
-    return document.getElementById(a.getAttribute('href').slice(1));
-  }).filter(Boolean);
-
-  function onScroll() {
-    var st = window.pageYOffset || document.documentElement.scrollTop;
-    var dh = document.documentElement.scrollHeight - window.innerHeight;
-    if (progBar) progBar.style.width = (dh > 0 ? (st / dh) * 100 : 0) + '%';
-    if (bttBtn)  bttBtn.classList.toggle('visible', st > 320);
-    var activeSec = null;
-    if (spySecs.length) {
-      activeSec = spySecs[0];
-      spySecs.forEach(function (sec) { if (sec.offsetTop - 90 <= st) activeSec = sec; });
-      spyLinks.forEach(function (a) {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + activeSec.id);
-      });
-    }
-    if (snBtns.length && activeSec) {
-      snBtns.forEach(function (btn) {
-        btn.classList.toggle('active', btn.dataset.secId === activeSec.id);
-      });
-    }
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  if (bttBtn) bttBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
-
-  /* ── Animated count-up for About stats ── */
-  var countObs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      var el     = e.target;
-      var target = parseInt(el.dataset.target, 10);
-      var suffix = el.dataset.suffix || '';
-      var dur = 1200, start = null;
-      function step(ts) {
-        if (!start) start = ts;
-        var p = Math.min((ts - start) / dur, 1);
-        el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target) + suffix;
-        if (p < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-      countObs.unobserve(el);
-    });
-  }, { threshold: 0.6 });
-  document.querySelectorAll('.stat-num').forEach(function (el) { countObs.observe(el); });
-
-  /* ── Smooth nav scroll ── */
+   
   document.querySelectorAll('.nav__link[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       e.preventDefault();
-      if (links)  { links.classList.remove('open'); }
+      if (links) { links.classList.remove('open'); }
       if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded', false); }
       var t = document.querySelector(this.getAttribute('href'));
       if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1954,9 +1362,9 @@
 </script>
 
 
-  <footer role="contentinfo">
+  <footer>
     <div class="footer__inner">
-      <span>&copy; 2026 Kofi Ampomah &nbsp;·&nbsp; <span style="font-size:.72em;opacity:.55;">Updated Apr 2026</span></span>
+      <span>&copy; 2026 Kofi Ampomah</span>
       <div class="footer__links">
         <a href="mailto:kampomah@crimson.ua.edu">Email</a>
         <a href="https://github.com/Ampomah-Kofi" target="_blank" rel="noopener">GitHub</a>
